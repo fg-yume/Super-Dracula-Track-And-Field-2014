@@ -57,6 +57,7 @@
     <script>scripts\shifty.gml</script>
   </scripts>
   <objects name="objects">
+    <object>objects\o_controller</object>
     <object>objects\o_floor</object>
     <object>objects\o_floor_ramp_right</object>
     <object>objects\o_floor_ramp_left</object>
@@ -64,13 +65,13 @@
     <object>objects\o_ramp_right</object>
     <object>objects\o_ramp_left</object>
     <object>objects\o_water</object>
-    <object>objects\o_playermain</object>
     <object>objects\o_character</object>
     <object>objects\o_light_volume</object>
     <object>objects\o_platform_ud</object>
     <object>objects\o_platform_lr</object>
     <object>objects\o_turn</object>
     <object>objects\o_enemy</object>
+    <object>objects\o_playermain</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>
