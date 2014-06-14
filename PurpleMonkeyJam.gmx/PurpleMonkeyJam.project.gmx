@@ -7,7 +7,6 @@
   <sounds name="sound"/>
   <sprites name="sprites">
     <sprite>sprites\s_playerhitbox</sprite>
-    <sprite>sprites\s_bigHitBox</sprite>
     <sprite>sprites\s_dracula_idle</sprite>
     <sprite>sprites\s_wall</sprite>
     <sprite>sprites\s_ramp_right</sprite>
@@ -16,7 +15,6 @@
     <sprite>sprites\s_floor_ramp_right</sprite>
     <sprite>sprites\s_floor_ramp_left</sprite>
     <sprite>sprites\s_lightvolume</sprite>
-    <sprite>sprites\s_turn</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\t_lightbg</background>
@@ -59,6 +57,7 @@
     <script>scripts\shifty.gml</script>
   </scripts>
   <objects name="objects">
+    <object>objects\o_controller</object>
     <object>objects\o_floor</object>
     <object>objects\o_floor_ramp_right</object>
     <object>objects\o_floor_ramp_left</object>
@@ -66,22 +65,19 @@
     <object>objects\o_ramp_right</object>
     <object>objects\o_ramp_left</object>
     <object>objects\o_water</object>
-    <object>objects\o_playermain</object>
     <object>objects\o_character</object>
     <object>objects\o_light_volume</object>
     <object>objects\o_platform_ud</object>
     <object>objects\o_platform_lr</object>
     <object>objects\o_turn</object>
     <object>objects\o_enemy</object>
-    <object>objects\o_bigSlowEnemy</object>
-    <object>objects\o_sun</object>
+    <object>objects\o_playermain</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>
     <room>rooms\room1</room>
     <room>rooms\rm_Level1</room>
     <room>rooms\rm_Level2</room>
-    <room>rooms\rm_Level3</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
