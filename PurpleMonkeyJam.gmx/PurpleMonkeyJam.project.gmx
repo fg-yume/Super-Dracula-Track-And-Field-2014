@@ -7,6 +7,7 @@
   <sounds name="sound"/>
   <sprites name="sprites">
     <sprite>sprites\s_playerhitbox</sprite>
+    <sprite>sprites\s_bigSlowEnemyHItbox</sprite>
     <sprite>sprites\s_character</sprite>
     <sprite>sprites\s_dracula_idle</sprite>
     <sprite>sprites\s_wall</sprite>
@@ -84,6 +85,7 @@
     <object>objects\o_blood_small</object>
     <object>objects\o_blood_splatter</object>
     <object>objects\o_blood_splatter2</object>
+    <object>objects\o_bigSlowEnemy</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>
