@@ -121,8 +121,8 @@ u_pressed = 0;
 //font = font_add_sprite(sFont,ord('!'),0,0);
 
 
-sprite = s_playerhitbox;
-sprite_speed = .25;
+sprite = s_dracula_idle;
+sprite_speed = .15;
 sprite_frame = 0;
 
 screenshake = 0;
@@ -672,7 +672,8 @@ if(onground){
         //}
     }
     else{
-        //sprite = sMainIdle;
+        sprite = s_dracula_idle;
+        sprite_speed = .15;
     }
 }
 else{

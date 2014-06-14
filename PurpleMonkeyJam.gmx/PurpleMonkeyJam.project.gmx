@@ -7,6 +7,7 @@
   <sounds name="sound"/>
   <sprites name="sprites">
     <sprite>sprites\s_playerhitbox</sprite>
+    <sprite>sprites\s_dracula_idle</sprite>
     <sprite>sprites\s_wall</sprite>
     <sprite>sprites\s_ramp_right</sprite>
     <sprite>sprites\s_ramp_left</sprite>
@@ -66,6 +67,9 @@
     <object>objects\o_playermain</object>
     <object>objects\o_character</object>
     <object>objects\o_light_volume</object>
+    <object>objects\o_platform_ud</object>
+    <object>objects\o_platform_lr</object>
+    <object>objects\o_turn</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>
