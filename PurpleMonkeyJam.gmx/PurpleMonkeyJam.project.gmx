@@ -72,6 +72,7 @@
     <object>objects\o_turn</object>
     <object>objects\o_enemy</object>
     <object>objects\o_playermain</object>
+    <object>objects\o_sun</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>
