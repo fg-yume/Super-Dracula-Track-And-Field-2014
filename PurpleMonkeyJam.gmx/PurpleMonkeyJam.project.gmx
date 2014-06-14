@@ -70,6 +70,7 @@
     <object>objects\o_platform_ud</object>
     <object>objects\o_platform_lr</object>
     <object>objects\o_turn</object>
+    <object>objects\o_enemy</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>

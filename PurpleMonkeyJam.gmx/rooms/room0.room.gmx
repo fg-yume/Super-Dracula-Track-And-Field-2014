@@ -272,6 +272,7 @@
     <instance objName="o_turn" x="128" y="200" name="inst_918CFA89" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_turn" x="208" y="200" name="inst_D0FB696D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_turn" x="208" y="280" name="inst_E02D6D29" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_enemy" x="608" y="312" name="inst_ABC40757" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
