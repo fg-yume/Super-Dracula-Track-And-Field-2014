@@ -82,6 +82,16 @@ x += xmomentum;
           <argument>
             <kind>1</kind>
             <string>with(other){
+    if(!in_light || batmode){
+        blood += 1;
+        if(blood &gt; 5){
+            blood = 5;
+        }
+        with(other){
+            instance_destroy();
+        }
+    }
+    else{
     if(!immune){
         if(x &lt; other.x){
             xmomentum = -7;
@@ -93,6 +103,7 @@ x += xmomentum;
         stun = 24;
         knockback = 6;
         immune = 32;
+    }
     }
 }
 </string>

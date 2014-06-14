@@ -50,8 +50,7 @@ xmomentum = 0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(x &gt; o_character.x - 260 &amp;&amp; x &lt; o_character.x + 260  &amp;&amp; y &gt; o_character.y - 260 &amp;&amp; y &lt; o_character.y + 260){
-if(place_meeting(x,y-2,o_character) &amp;&amp; !place_meeting(x,y,o_character) &amp;&amp; ymomentum &lt; 0)
+            <string>if(place_meeting(x,y-2,o_character) &amp;&amp; !place_meeting(x,y,o_character) &amp;&amp; ymomentum &lt; 0)
 {
     with(o_character)
     {
@@ -85,7 +84,6 @@ if(place_meeting(x,y,o_turn))
 {
     xmomentum = -xmomentum;
     ymomentum = -ymomentum;
-}
 }
 </string>
           </argument>
