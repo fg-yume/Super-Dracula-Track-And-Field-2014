@@ -46,6 +46,7 @@
     <background>background\t_lightplat_smid</background>
     <background>background\t_lightplat_sleft</background>
     <background>background\t_lightplat_sright</background>
+    <background>background\b_bricks</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
