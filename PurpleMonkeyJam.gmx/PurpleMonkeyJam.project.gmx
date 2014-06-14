@@ -42,6 +42,9 @@
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>
+    <room>rooms\room1</room>
+    <room>rooms\rm_Level1</room>
+    <room>rooms\rm_Level2</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
