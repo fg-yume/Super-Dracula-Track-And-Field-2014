@@ -7,6 +7,7 @@
   <sounds name="sound"/>
   <sprites name="sprites">
     <sprite>sprites\s_playerhitbox</sprite>
+    <sprite>sprites\s_character</sprite>
     <sprite>sprites\s_dracula_idle</sprite>
     <sprite>sprites\s_wall</sprite>
     <sprite>sprites\s_ramp_right</sprite>

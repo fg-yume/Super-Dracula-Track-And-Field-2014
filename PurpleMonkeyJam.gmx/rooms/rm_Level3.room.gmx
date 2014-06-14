@@ -62,11 +62,11 @@
     <instance objName="o_enemy" x="976" y="424" name="inst_1C5E4C17" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_enemy" x="1104" y="424" name="inst_ECCD3FD8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_enemy" x="1056" y="424" name="inst_3F2C6AE4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="o_light_volume" x="1552" y="304" name="inst_1F567331" locked="0" code="" scaleX="2.625" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_light_volume" x="1552" y="304" name="inst_1F567331" locked="0" code="" scaleX="2.63000011444092" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_turn" x="1536" y="416" name="inst_462D76C3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_turn" x="1888" y="416" name="inst_9F933E49" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="o_character" x="1600" y="424" name="inst_32BF7BD6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="o_character" x="1840" y="424" name="inst_E67BF093" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_enemy" x="1600" y="424" name="inst_3FD1051C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_enemy" x="1840" y="424" name="inst_2C105FB5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
