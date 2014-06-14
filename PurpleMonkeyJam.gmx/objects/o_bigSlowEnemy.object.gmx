@@ -26,6 +26,11 @@
           <argument>
             <kind>1</kind>
             <string>xmomentum = -3;
+ymomentum = 0;
+
+image_speed = .5;
+
+xscale = 1;
 </string>
           </argument>
         </arguments>
