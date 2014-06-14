@@ -15,33 +15,7 @@
     <sprite>sprites\s_floor_ramp_left</sprite>
     <sprite>sprites\s_lightvolume</sprite>
   </sprites>
-  <backgrounds name="background">
-    <background>background\t_lightbg</background>
-    <background>background\t_darkplat_topmid</background>
-    <background>background\t_darkplat_topleft</background>
-    <background>background\t_darkplat_topright</background>
-    <background>background\t_darkplat_midleft</background>
-    <background>background\t_darkplat_midright</background>
-    <background>background\t_darkplat_midmid</background>
-    <background>background\t_darkplat_botmid</background>
-    <background>background\t_darkplat_botleft</background>
-    <background>background\t_darkplat_botright</background>
-    <background>background\t_darkplat_smid</background>
-    <background>background\t_darkplat_sleft</background>
-    <background>background\t_darkplat_sright</background>
-    <background>background\t_lightplat_topmid</background>
-    <background>background\t_lightplat_topleft</background>
-    <background>background\t_lightplat_topright</background>
-    <background>background\t_lightplat_midleft</background>
-    <background>background\t_lightplat_midright</background>
-    <background>background\t_lightplat_midmid</background>
-    <background>background\t_lightplat_botmid</background>
-    <background>background\t_lightplat_botleft</background>
-    <background>background\t_lightplat_botright</background>
-    <background>background\t_lightplat_smid</background>
-    <background>background\t_lightplat_sleft</background>
-    <background>background\t_lightplat_sright</background>
-  </backgrounds>
+  <backgrounds name="background"/>
   <paths name="paths"/>
   <scripts name="scripts">
     <script>scripts\shiftx.gml</script>
@@ -68,9 +42,6 @@
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>
-    <room>rooms\room1</room>
-    <room>rooms\rm_Level1</room>
-    <room>rooms\rm_Level2</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
