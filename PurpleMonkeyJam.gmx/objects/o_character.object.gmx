@@ -36,27 +36,49 @@ jumpcount = maxjumpcount;
 jumping = 0;
 
 grav = 1; //gravity
-maxairspeed = 8; //maximum speed in air
+maxairspeed = 12; //maximum speed in air
 maxairaccel = 8; //maximum speed you can accelerate to in the air
+maxairaccel_base = 8;
 air_accel = 1; //acceleration in the air
 air_decel = 1; //rate of deceleration in the air
 maxfallspeed = 12; //the maximum speed at which the character falls naturally
 minfallspeed = 12; //the maximum speed at which the character moves up naturally
 fastfall_accel = 0;
 
-//character stat variables (set to defaults here)
+doublejump = 0;
+
+in_light = 0;
+
 maxspeed_dark = 8; //maximum speed on ground
 accel_dark = 4; //acceleration on ground
 decel_dark = 4; //rate of deceleration on the ground
+jumpspeed_dark = 6;
 maxjumpcount_dark = 6;
 maxairaccel_dark = 8; //maximum speed in air
+airaccel_dark = 1;
+airdecel_dark = 1;
+doublejump_dark = 0;
 
-//character stat variables (set to defaults here)
 maxspeed_light = 4; //maximum speed on ground
 accel_light = 2; //acceleration on ground
 decel_light = 2; //rate of deceleration on the ground
+jumpspeed_light = 6;
 maxjumpcount_light = 3;
 maxairaccel_light = 4; //maximum speed in air
+airaccel_light = 1;
+airdecel_light = 1;
+doublejump_light = 0;
+
+batmode = 0;
+maxspeed_bat = 10; //maximum speed on ground
+accel_bat = 5; //acceleration on ground
+decel_bat = 5; //rate of deceleration on the ground
+jumpspeed_bat = 8;
+maxjumpcount_bat = 1;
+maxairaccel_bat = 10; //maximum speed in air
+airaccel_bat = 5;
+airdecel_bat = 5;
+doublejump_bat = 1;
 
 //movement-related variables
 xscale = 1; //direction character faces. 1 is right, -1 is left.
@@ -64,8 +86,6 @@ xmomentum = 0; //horizontal movement
 ymomentum = 0; //vertical movement
 onground = 0; //1 if the character is on solid ground
 jump_forgiveness = 0; //allows character to jump immediately after walking off a platform
-
-in_light = 0;
 
 stun = 0;
 immune = 0;
@@ -93,6 +113,8 @@ l_key = vk_left;
 u_key = vk_up;
 u_key2 = ord('Z');
 d_key = vk_down;
+space_key = vk_space;
+space_key2 = ord('X');
 
 u_pressed = 0;
 
@@ -107,6 +129,29 @@ screenshake = 0;
 
 timing = 0;
 time = 0;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="2">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>batmode = 0;
 </string>
           </argument>
         </arguments>
@@ -241,21 +286,45 @@ if(onLadder &amp;&amp; (!place_meeting(x,y,oLadder) || ((l_check() || r_check())
     grav = 1;
 }*/
 
-if(place_meeting(x,y,o_light_volume)){
+if(!batmode){
+if(space_check()){
+    batmode = 1;
+    maxspeed = maxspeed_bat;
+    accel = accel_bat;
+    decel = decel_bat;
+    jumpspeed = jumpspeed_bat;
+    maxjumpcount = maxjumpcount_bat;
+    maxairaccel_base = maxairaccel_bat;
+    airaccel = airaccel_bat;
+    airdecel = airdecel_bat;
+    doublejump = doublejump_bat;
+    maxairaccel = maxairaccel_base;
+    alarm[2] = 150;
+}
+else if(place_meeting(x,y,o_light_volume)){
     in_light = 1;
     maxspeed = maxspeed_light;
     accel = accel_light;
     decel = decel_light;
+    jumpspeed = jumpspeed_light;
     maxjumpcount = maxjumpcount_light;
-    maxairaccel = maxairaccel_light;
+    maxairaccel_base = maxairaccel_light;
+    airaccel = airaccel_light;
+    airdecel = airdecel_light;
+    doublejump = doublejump_light;
 }
 else{
     in_light = 0;
     maxspeed = maxspeed_dark;
     accel = accel_dark;
     decel = decel_dark;
+    jumpspeed = jumpspeed_dark;
     maxjumpcount = maxjumpcount_dark;
-    maxairaccel = maxairaccel_dark;
+    maxairaccel_base = maxairaccel_dark;
+    airaccel = airaccel_dark;
+    airdecel = airdecel_dark;
+    doublejump = doublejump_dark;
+}
 }
 
 if(place_meeting(x,y,o_water) &amp;&amp; !underwater){
@@ -366,6 +435,7 @@ if( ( place_meeting(x,y+1,o_wall) || ( place_meeting(x,y+1,o_floor) &amp;&amp; !
     jumpcount = maxjumpcount;
     jumping = 0;
     jump_forgiveness = 3;
+    maxairaccel = maxairaccel_base;
 }
 else{
     onground = 0;
@@ -461,9 +531,17 @@ if(u_release() &amp;&amp; jumping){
     jumping = 0;
 }
 
-if(u_check() &amp;&amp; jumpcount &gt; 0 &amp;&amp; jumping = 1){
-    jumpcount -= 1;
-    ymomentum = -jumpspeed;
+if(doublejump){
+    if(u_press()){
+        jumpcount -= 1;
+        ymomentum = -jumpspeed;
+    }
+}
+else{
+    if(u_check() &amp;&amp; jumpcount &gt; 0 &amp;&amp; jumping = 1){
+        jumpcount -= 1;
+        ymomentum = -jumpspeed;
+    }
 }
 
 //decelerate faster if above max speed
