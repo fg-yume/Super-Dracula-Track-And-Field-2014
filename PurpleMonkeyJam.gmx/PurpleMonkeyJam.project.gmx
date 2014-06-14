@@ -15,6 +15,9 @@
     <sprite>sprites\s_floor_ramp_right</sprite>
     <sprite>sprites\s_floor_ramp_left</sprite>
     <sprite>sprites\s_lightvolume</sprite>
+    <sprite>sprites\s_blood</sprite>
+    <sprite>sprites\s_blood_small</sprite>
+    <sprite>sprites\s_blood2</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\t_lightbg</background>
@@ -73,6 +76,10 @@
     <object>objects\o_enemy</object>
     <object>objects\o_playermain</object>
     <object>objects\o_sun</object>
+    <object>objects\o_blood</object>
+    <object>objects\o_blood_small</object>
+    <object>objects\o_blood_splatter</object>
+    <object>objects\o_blood_splatter2</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>
