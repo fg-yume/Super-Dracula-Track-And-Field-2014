@@ -8,13 +8,37 @@
   <sprites name="sprites">
     <sprite>sprites\s_playerhitbox</sprite>
     <sprite>sprites\s_wall</sprite>
+    <sprite>sprites\s_ramp_right</sprite>
+    <sprite>sprites\s_ramp_left</sprite>
+    <sprite>sprites\s_floor</sprite>
+    <sprite>sprites\s_floor_ramp_right</sprite>
+    <sprite>sprites\s_floor_ramp_left</sprite>
     <sprite>sprites\s_lightvolume</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
+  <scripts name="scripts">
+    <script>scripts\shiftx.gml</script>
+    <script>scripts\d_check.gml</script>
+    <script>scripts\d_press.gml</script>
+    <script>scripts\l_check.gml</script>
+    <script>scripts\r_check.gml</script>
+    <script>scripts\u_check.gml</script>
+    <script>scripts\u_press.gml</script>
+    <script>scripts\u_release.gml</script>
+    <script>scripts\shifty.gml</script>
+  </scripts>
   <objects name="objects">
+    <object>objects\o_floor</object>
+    <object>objects\o_floor_ramp_right</object>
+    <object>objects\o_floor_ramp_left</object>
     <object>objects\o_wall</object>
+    <object>objects\o_ramp_right</object>
+    <object>objects\o_ramp_left</object>
+    <object>objects\o_water</object>
     <object>objects\o_playermain</object>
+    <object>objects\o_character</object>
+    <object>objects\object4</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>
