@@ -26,9 +26,9 @@
           <argument>
             <kind>1</kind>
             <string>//character stat variables (set to defaults here)
-maxspeed = 4; //maximum speed on ground
-accel = 2; //acceleration on ground
-decel = 2; //rate of deceleration on the ground
+maxspeed = 8; //maximum speed on ground
+accel = 4; //acceleration on ground
+decel = 4; //rate of deceleration on the ground
 
 jumpspeed = 6; //strength of jumps
 maxjumpcount = 6;
@@ -36,7 +36,7 @@ jumpcount = maxjumpcount;
 jumping = 0;
 
 grav = 1; //gravity
-maxairspeed = 4; //maximum speed in air
+maxairspeed = 8; //maximum speed in air
 air_accel = 1; //acceleration in the air
 air_decel = 1; //rate of deceleration in the air
 maxfallspeed = 12; //the maximum speed at which the character falls naturally
