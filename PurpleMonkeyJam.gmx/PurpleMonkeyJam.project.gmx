@@ -73,7 +73,11 @@
     <object>objects\o_platform_lr</object>
     <object>objects\o_turn</object>
     <object>objects\o_enemy</object>
+<<<<<<< HEAD
+    <object>objects\o_playermain</object>
+=======
     <object>objects\o_bigSlowEnemy</object>
+>>>>>>> origin/master
     <object>objects\o_sun</object>
   </objects>
   <rooms name="rooms">
