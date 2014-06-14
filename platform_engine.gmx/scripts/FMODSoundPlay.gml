@@ -1,4 +1,4 @@
-//export double FMODSoundPlay(double sound, double paused)
+/*//export double FMODSoundPlay(double sound, double paused)
 
 //Plays a sound... Finally
 
@@ -17,6 +17,6 @@
 //after you make the PlaySound Call... The instance will become invalid 
 //when the sound is done playing
 var t;
-t =  external_call(global.dll_FMODSoundPlay,argument0,argument1);
+t =  external_call(global.dll_FMODSoundPlay,argument0,false);
 FMODUpdate();
 return t;

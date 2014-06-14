@@ -1,4 +1,4 @@
-//export double FMODfree(void)
+/*//export double FMODfree(void)
 
 //Frees fmods allocated resources and stops the sound system
 //You must call FMODinit(); if you want to use the system again

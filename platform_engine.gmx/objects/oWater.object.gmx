@@ -74,7 +74,8 @@ depth = -101;</string>
 
 draw_sprite_ext(sprite_index,-1,x,y,1,1,0,oBackground.color1,image_alpha);
 
-d3d_set_fog(1,c_black,0,oCharacter.brightness);</string>
+d3d_set_fog(1,c_black,0,oCharacter.brightness);
+</string>
           </argument>
         </arguments>
       </action>
@@ -91,5 +92,8 @@ d3d_set_fog(1,c_black,0,oCharacter.brightness);</string>
   <PhysicsObjectFriction>0.200000002980232</PhysicsObjectFriction>
   <PhysicsObjectAwake>-1</PhysicsObjectAwake>
   <PhysicsObjectKinematic>0</PhysicsObjectKinematic>
-  <PhysicsShapePoints/>
+  <PhysicsShapePoints>
+    <point>0,0</point>
+    <point>16,16</point>
+  </PhysicsShapePoints>
 </object>

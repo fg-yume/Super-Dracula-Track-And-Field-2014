@@ -55,7 +55,7 @@ if(place_meeting(x,y-2,oCharacter) &amp;&amp; !place_meeting(x,y,oCharacter) &am
 {
     with(oCharacter)
     {
-        shifty(other.ymomentum);
+        shifty(other.ymomentum,1);
     }
     
     y += ymomentum;
@@ -66,7 +66,7 @@ else if(place_meeting(x,y-2,oCharacter) &amp;&amp; !place_meeting(x,y,oCharacter
 
     with(oCharacter)
     {
-        shifty(other.ymomentum);
+        shifty(other.ymomentum,1);
     }
 }
 else{
@@ -75,7 +75,7 @@ else{
 
 if(place_meeting(x,y-2,oCharacter) &amp;&amp; !place_meeting(x,y,oCharacter)){
     with(oCharacter){
-        shiftx(other.xmomentum);
+        shiftx(other.xmomentum,1);
     }
 }
 
@@ -86,7 +86,8 @@ if(place_meeting(x,y,oEnemyTurn))
     xmomentum = -xmomentum;
     ymomentum = -ymomentum;
 }
-}</string>
+}
+</string>
           </argument>
         </arguments>
       </action>
@@ -103,5 +104,8 @@ if(place_meeting(x,y,oEnemyTurn))
   <PhysicsObjectFriction>0.200000002980232</PhysicsObjectFriction>
   <PhysicsObjectAwake>-1</PhysicsObjectAwake>
   <PhysicsObjectKinematic>0</PhysicsObjectKinematic>
-  <PhysicsShapePoints/>
+  <PhysicsShapePoints>
+    <point>0,0</point>
+    <point>8,8</point>
+  </PhysicsShapePoints>
 </object>

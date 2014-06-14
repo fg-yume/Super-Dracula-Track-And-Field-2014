@@ -1,4 +1,4 @@
-
+/*
 var t;
 t = "
 
@@ -180,9 +180,9 @@ alarm[0] = 1;
 path_start(path0,3,3,true);
 
 //on alarm[0]
-sound = FMODSoundAdd("music.mid",true,false /* or true if large mp3*/);
+sound = FMODSoundAdd("music.mid",true,false);
 //It's really like a moving boombox or a talking character, so ambient effect group could be used
-FMODSoundSetGroup(sound,4);
+/*FMODSoundSetGroup(sound,4);
 FMODSoundSet3dMinMaxDistance(sound,100,300);
 instance = FMODSoundLoop3d(sound,x,y,0);
 

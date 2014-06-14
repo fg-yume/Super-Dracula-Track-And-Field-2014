@@ -1,4 +1,4 @@
-// this draws the surface on the screen
+/*// this draws the surface on the screen
 d3d_set_fog(0,c_black,0,0);
 
 surface_reset_target();

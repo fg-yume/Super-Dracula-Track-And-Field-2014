@@ -1,4 +1,4 @@
-//Call this when the game starts to create the dll interface
+/*//Call this when the game starts to create the dll interface
 //returns nothing... GM will stop if the dll could not be linked
 
 //NOTE: You must have GMFMODSimple.dll and fmodex.dll in your game directory

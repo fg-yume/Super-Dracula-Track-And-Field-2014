@@ -214,7 +214,7 @@ alarm[1] = 12 + random(12);</string>
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>d3d_set_fog(0,c_black,0,0);
+            <string>/*d3d_set_fog(0,c_black,0,0);
 
 color1 = make_color_hsv(105+hue,160+sat,200);
 color2 = make_color_hsv(140+hue,160+sat,200);
@@ -245,7 +245,8 @@ draw_rectangle(view_xview,view_yview+138,view_xview+view_wview,view_yview+161,0)
 draw_set_color(make_color_hsv(150+hue,160+sat,200));
 draw_rectangle(view_xview,view_yview+161,view_xview+view_wview,view_yview+184,0);*/
 
-d3d_set_fog(1,c_black,0,oCharacter.brightness);</string>
+//d3d_set_fog(1,c_black,0,oCharacter.brightness);
+</string>
           </argument>
         </arguments>
       </action>

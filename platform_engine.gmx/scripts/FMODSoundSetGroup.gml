@@ -1,4 +1,4 @@
-//export double FMODSoundSetGroup(double sound, double group)
+/*//export double FMODSoundSetGroup(double sound, double group)
 //You have 4 groups in the system
 //returns 1 on success
 //returns 0 on error

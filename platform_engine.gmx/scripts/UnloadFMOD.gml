@@ -1,4 +1,4 @@
-//This frees the FMOD dll
+/*//This frees the FMOD dll
 //returns nothing
 
 //Example calling

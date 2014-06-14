@@ -28,52 +28,52 @@
             <string>texty = instance_create(x,y,oText);
 
 LoadFMOD();
-FMODinit(100);
+FMODinit(100, false);
 
-music1 = FMODSoundAdd("music/music.ogg");
+music1 = FMODSoundAdd("music/music.ogg", false, false);
 FMODSoundSetGroup(music1,3);
 
-hit = FMODSoundAdd("music/hit.wav");
+hit = FMODSoundAdd("music/hit.wav", false, false);
 FMODSoundSetGroup(hit,3);
 
-collect = FMODSoundAdd("music/collect.wav");
+collect = FMODSoundAdd("music/collect.wav", false, false);
 FMODSoundSetGroup(collect,3);
 
-jump = FMODSoundAdd("music/jump.wav");
+jump = FMODSoundAdd("music/jump.wav", false, false);
 FMODSoundSetMaxVolume(jump,.5);
 FMODSoundSetGroup(jump,3);
 
-boing = FMODSoundAdd("music/boing.wav");
+boing = FMODSoundAdd("music/boing.wav", false, false);
 FMODSoundSetMaxVolume(boing,.6);
 FMODSoundSetGroup(boing,3);
 
-port = FMODSoundAdd("music/teleport.wav");
+port = FMODSoundAdd("music/teleport.wav", false, false);
 FMODSoundSetMaxVolume(port,.8);
 FMODSoundSetGroup(port,3);
 
-freeze = FMODSoundAdd("music/freeze.wav");
+freeze = FMODSoundAdd("music/freeze.wav", false, false);
 FMODSoundSetMaxVolume(freeze,.8);
 FMODSoundSetGroup(freeze,3);
 
-shatter = FMODSoundAdd("music/shatter.wav");
+shatter = FMODSoundAdd("music/shatter.wav", false, false);
 FMODSoundSetGroup(shatter,3);
 
-ending = FMODSoundAdd("music/end.wav");
+ending = FMODSoundAdd("music/end.wav", false, false);
 FMODSoundSetGroup(ending,3);
 
 
-sFrozen = sprite_add_alpha("music/frozen.png",1,0,1,0,0);
+/*sFrozen = sprite_add_alpha("music/frozen.png",1,0,1,0,0);
 sWindow3 = sprite_add_alpha("music/window3.png",1,0,1,0,0);
 sWindow = sprite_add_alpha("music/window.png",1,0,1,0,0);
 sWindow5 = sprite_add_alpha("music/window5.png",1,0,1,0,0);
 sWindowSmall = sprite_add_alpha("music/windowSmall.png",1,0,1,0,0);
 sWindowSlant = sprite_add_alpha("music/windowSlant.png",1,0,1,0,0);
-sFactoryWindow = sprite_add_alpha("music/factorywindow.png",1,0,1,0,0);
+sFactoryWindow = sprite_add_alpha("music/factorywindow.png",1,0,1,0,0);*/
 
 
 
 //instance_create(x,y,oBackground);
-instance_create(x,y,oScreen);
+//instance_create(x,y,oScreen);
 
 oCharacter.apocalevel = 0;
 
@@ -157,7 +157,8 @@ screenshake = 0;
 endNow = 0;
 
 timing = 0;
-time = 0;</string>
+time = 0;
+</string>
           </argument>
         </arguments>
       </action>
@@ -522,30 +523,31 @@ if(underwater){
 }
 
 if(place_meeting(x,y,oCurrentLeft)){
-    shiftx(-5);
+    shiftx(-5, 1);
     currentLeft = 1;
 }
 else{
     currentLeft = 0;
 }
 if(place_meeting(x,y,oCurrentRight)){
-    shiftx(5);
+    shiftx(5, 1);
     currentRight = 1;
 }
 else{
     currentRight = 0;
 }
 if(place_meeting(x,y,oCurrentUp)){
-    shifty(-5);
+    shifty(-5, 1);
 }
 if(place_meeting(x,y,oCurrentDown)){
-    shifty(5);
+    shifty(5, 1);
 }
 
 water_image += 1;
 if(water_image = 4){
     water_image = 0;
-}</string>
+}
+</string>
           </argument>
         </arguments>
       </action>
@@ -787,7 +789,7 @@ if(float &gt; 0){
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>FMODSoundFree(music1);
+            <string>/*FMODSoundFree(music1);
 FMODSoundFree(hit);
 FMODSoundFree(collect);
 FMODSoundFree(jump);
@@ -806,7 +808,8 @@ sprite_delete(sWindow);
 sprite_delete(sWindow5);
 sprite_delete(sWindowSmall);
 sprite_delete(sWindowSlant);
-sprite_delete(sFactoryWindow);</string>
+sprite_delete(sFactoryWindow);
+</string>
           </argument>
         </arguments>
       </action>
@@ -872,7 +875,8 @@ if(drawx &gt; room_width - 16 - text_width){
 }
 draw_text(drawx,y-14,text);
 }
-}</string>
+}
+</string>
           </argument>
         </arguments>
       </action>
@@ -916,5 +920,8 @@ else{
   <PhysicsObjectFriction>0.200000002980232</PhysicsObjectFriction>
   <PhysicsObjectAwake>-1</PhysicsObjectAwake>
   <PhysicsObjectKinematic>0</PhysicsObjectKinematic>
-  <PhysicsShapePoints/>
+  <PhysicsShapePoints>
+    <point>5,-1</point>
+    <point>8,8</point>
+  </PhysicsShapePoints>
 </object>

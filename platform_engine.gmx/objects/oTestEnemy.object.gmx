@@ -117,7 +117,8 @@ x += xmomentum;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_sprite_ext(sprite_index,-1,x,y,xscale,1,0,c_white,1);</string>
+            <string>draw_sprite_ext(sprite_index,-1,x,y,xscale,1,0,c_white,1);
+</string>
           </argument>
         </arguments>
       </action>
@@ -134,5 +135,8 @@ x += xmomentum;
   <PhysicsObjectFriction>0.200000002980232</PhysicsObjectFriction>
   <PhysicsObjectAwake>-1</PhysicsObjectAwake>
   <PhysicsObjectKinematic>0</PhysicsObjectKinematic>
-  <PhysicsShapePoints/>
+  <PhysicsShapePoints>
+    <point>8,0</point>
+    <point>8,8</point>
+  </PhysicsShapePoints>
 </object>

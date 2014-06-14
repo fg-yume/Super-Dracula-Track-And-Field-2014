@@ -52,13 +52,14 @@
             <string>if(place_meeting(x,y-2,oCharacter) &amp;&amp; !place_meeting(x,y,oCharacter)){
     with(oCharacter){
         if(!moved){
-            shiftx(other.move);
+            shiftx(other.move,1);
             moved = 1;
         }
     }
 }
 
-image_index = oCharacter.water_image;</string>
+image_index = oCharacter.water_image;
+</string>
           </argument>
         </arguments>
       </action>
@@ -75,5 +76,8 @@ image_index = oCharacter.water_image;</string>
   <PhysicsObjectFriction>0.200000002980232</PhysicsObjectFriction>
   <PhysicsObjectAwake>-1</PhysicsObjectAwake>
   <PhysicsObjectKinematic>0</PhysicsObjectKinematic>
-  <PhysicsShapePoints/>
+  <PhysicsShapePoints>
+    <point>0,0</point>
+    <point>16,16</point>
+  </PhysicsShapePoints>
 </object>

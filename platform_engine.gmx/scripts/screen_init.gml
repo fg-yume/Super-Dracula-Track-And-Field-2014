@@ -1,4 +1,4 @@
-// screen base(view_wview and view_hview)
+/*// screen base(view_wview and view_hview)
 screen_x = 0;
 screen_y = 0;
 screen_w = 240;
