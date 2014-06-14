@@ -37,11 +37,26 @@ jumping = 0;
 
 grav = 1; //gravity
 maxairspeed = 8; //maximum speed in air
+maxairaccel = 8; //maximum speed you can accelerate to in the air
 air_accel = 1; //acceleration in the air
 air_decel = 1; //rate of deceleration in the air
 maxfallspeed = 12; //the maximum speed at which the character falls naturally
 minfallspeed = 12; //the maximum speed at which the character moves up naturally
 fastfall_accel = 0;
+
+//character stat variables (set to defaults here)
+maxspeed_dark = 8; //maximum speed on ground
+accel_dark = 4; //acceleration on ground
+decel_dark = 4; //rate of deceleration on the ground
+maxjumpcount_dark = 6;
+maxairaccel_dark = 8; //maximum speed in air
+
+//character stat variables (set to defaults here)
+maxspeed_light = 4; //maximum speed on ground
+accel_light = 2; //acceleration on ground
+decel_light = 2; //rate of deceleration on the ground
+maxjumpcount_light = 3;
+maxairaccel_light = 4; //maximum speed in air
 
 //movement-related variables
 xscale = 1; //direction character faces. 1 is right, -1 is left.
@@ -49,6 +64,8 @@ xmomentum = 0; //horizontal movement
 ymomentum = 0; //vertical movement
 onground = 0; //1 if the character is on solid ground
 jump_forgiveness = 0; //allows character to jump immediately after walking off a platform
+
+in_light = 0;
 
 stun = 0;
 immune = 0;
@@ -224,6 +241,23 @@ if(onLadder &amp;&amp; (!place_meeting(x,y,oLadder) || ((l_check() || r_check())
     grav = 1;
 }*/
 
+if(place_meeting(x,y,o_light_volume)){
+    in_light = 1;
+    maxspeed = maxspeed_light;
+    accel = accel_light;
+    decel = decel_light;
+    maxjumpcount = maxjumpcount_light;
+    maxairaccel = maxairaccel_light;
+}
+else{
+    in_light = 0;
+    maxspeed = maxspeed_dark;
+    accel = accel_dark;
+    decel = decel_dark;
+    maxjumpcount = maxjumpcount_dark;
+    maxairaccel = maxairaccel_dark;
+}
+
 if(place_meeting(x,y,o_water) &amp;&amp; !underwater){
 underwater = 1;
 
@@ -369,7 +403,7 @@ if(r_check()){
     if( xmomentum &lt; maxspeed &amp;&amp; onground ){
         xmomentum += accel;
     }
-    if( xmomentum &lt; maxairspeed &amp;&amp; !onground ){
+    if( xmomentum &lt; maxairaccel &amp;&amp; !onground ){
         xmomentum += air_accel;
     }
 }
@@ -378,7 +412,7 @@ else if(l_check()){
     if( xmomentum &gt; -maxspeed &amp;&amp; onground ){
         xmomentum -= accel;
     }
-    if( xmomentum &gt; -maxairspeed &amp;&amp; !onground ){
+    if( xmomentum &gt; -maxairaccel &amp;&amp; !onground ){
         xmomentum -= air_accel;
     }
 }
