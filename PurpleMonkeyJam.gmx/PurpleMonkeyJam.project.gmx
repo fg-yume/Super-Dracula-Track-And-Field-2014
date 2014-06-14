@@ -18,6 +18,7 @@
     <sprite>sprites\s_blood</sprite>
     <sprite>sprites\s_blood_small</sprite>
     <sprite>sprites\s_blood2</sprite>
+    <sprite>sprites\s_sun</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\t_lightbg</background>
