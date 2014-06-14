@@ -18,6 +18,7 @@
     <sprite>sprites\s_blood</sprite>
     <sprite>sprites\s_blood_small</sprite>
     <sprite>sprites\s_blood2</sprite>
+    <sprite>sprites\s_turn</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\t_lightbg</background>
@@ -86,6 +87,7 @@
     <room>rooms\room1</room>
     <room>rooms\rm_Level1</room>
     <room>rooms\rm_Level2</room>
+    <room>rooms\rm_Level3</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
