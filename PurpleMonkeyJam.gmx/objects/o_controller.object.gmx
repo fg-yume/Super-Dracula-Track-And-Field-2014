@@ -149,6 +149,8 @@ dead = 0;
           <argument>
             <kind>1</kind>
             <string>if(instance_exists(o_character)){
+draw_set_colour(c_black);
+draw_rectangle(view_xview+170, view_yview+326, view_xview+170+(5*60), view_yview+344, false);
 draw_set_colour(c_red);
 draw_rectangle(view_xview+170, view_yview+326, view_xview+170+(o_character.blood*60), view_yview+344, false);
 
@@ -172,7 +174,7 @@ if (instance_exists(o_sun))
 {
     sun_percent = o_sun.image_xscale / room_width;
 draw_sprite(s_dracula_idle, 0, view_xview + 80 + 480 * char_percent, view_yview + 24);
-draw_sprite(s_playerhitbox, 0, view_xview + 80 + 480 * sun_percent, view_yview + 24);
+draw_sprite(s_sunglyph, 0, view_xview + 80 + 480 * sun_percent, view_yview + 24);
 }
 }
 
