@@ -14,6 +14,7 @@
     <sound>sound\fx_sundie</sound>
     <sound>sound\fx_start</sound>
     <sound>sound\fx_transform</sound>
+    <sound>sound\fx_endlevel</sound>
     <sound>sound\m_levelmain</sound>
     <sound>sound\m_menutheme</sound>
     <sound>sound\m_tutmain</sound>
@@ -54,12 +55,16 @@
     <sprite>sprites\s_font_bigger</sprite>
     <sprite>sprites\s_font_outline_bigger</sprite>
     <sprite>sprites\s_bloodbar</sprite>
+    <sprite>sprites\s_torch</sprite>
+    <sprite>sprites\s_candle</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\b_bricks</background>
     <background>background\b_bricks_right</background>
     <background>background\b_bricks_center</background>
     <background>background\t_lightbg</background>
+    <background>background\t_torch</background>
+    <background>background\t_candle</background>
     <background>background\t_darkplat_topmid</background>
     <background>background\t_darkplat_topleft</background>
     <background>background\t_darkplat_topright</background>
