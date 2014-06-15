@@ -1909,6 +1909,10 @@
     <tile bgName="b_bricks_center" x="7872" y="0" w="16" h="16" xo="0" yo="0" id="10001987" name="inst_64421F97" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="b_bricks_center" x="7888" y="0" w="16" h="16" xo="0" yo="0" id="10001988" name="inst_AFD68FDD" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="b_bricks_center" x="7904" y="0" w="16" h="16" xo="0" yo="0" id="10001989" name="inst_02B521AF" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="b_bricks" x="4128" y="568" w="16" h="16" xo="0" yo="0" id="10002023" name="inst_3D023714" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="b_bricks" x="4128" y="584" w="16" h="16" xo="0" yo="0" id="10002024" name="inst_4EE7957F" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="b_bricks_right" x="4144" y="568" w="16" h="16" xo="0" yo="0" id="10002025" name="inst_E188308C" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="b_bricks_right" x="4144" y="584" w="16" h="16" xo="0" yo="0" id="10002026" name="inst_2986E52B" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
   </tiles>
   <PhysicsWorld>0</PhysicsWorld>
   <PhysicsWorldTop>0</PhysicsWorldTop>
