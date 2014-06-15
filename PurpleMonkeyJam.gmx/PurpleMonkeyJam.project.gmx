@@ -33,6 +33,7 @@
     <sprite>sprites\s_floor_ramp_left</sprite>
     <sprite>sprites\s_lightvolume</sprite>
     <sprite>sprites\s_playerhitbox</sprite>
+    <sprite>sprites\s_sunglyph</sprite>
     <sprite>sprites\s_bigSlowEnemyHItbox</sprite>
     <sprite>sprites\s_dracula_idle</sprite>
     <sprite>sprites\s_dracula_run</sprite>

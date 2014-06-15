@@ -155,7 +155,7 @@ if (instance_exists(o_sun))
 {
     sun_percent = o_sun.image_xscale / room_width;
 draw_sprite(s_dracula_idle, 0, view_xview + 80 + 480 * char_percent, view_yview + 24);
-draw_sprite(s_playerhitbox, 0, view_xview + 80 + 480 * sun_percent, view_yview + 24);
+draw_sprite(s_sunglyph, 0, view_xview + 80 + 480 * sun_percent, view_yview + 24);
 }
 }
 
