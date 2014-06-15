@@ -109,16 +109,7 @@ frozen = 0;
 blood = 0;
 
 
-//controls
-r_key = vk_right;
-l_key = vk_left;
-u_key = vk_up;
-u_key2 = ord('Z');
-d_key = vk_down;
-space_key = vk_space;
-space_key2 = ord('X');
 
-u_pressed = 0;
 
 //font = font_add_sprite(sFont,ord('!'),0,0);
 
