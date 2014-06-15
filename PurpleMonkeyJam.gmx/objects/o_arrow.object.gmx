@@ -108,6 +108,7 @@ instance_destroy();
     }
     else{
     if(!immune){
+        audio_play_sound(fx_hurt,0, false);
         xmomentum = 7*(sign(other.xmomentum));
         ymomentum = -5;
         stun = 24;

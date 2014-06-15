@@ -417,7 +417,12 @@ if(water_image = 4){
             <kind>1</kind>
             <string>//determines whether or not character is on the ground
 if( ( place_meeting(x,y+1,o_wall) || ( place_meeting(x,y+1,o_floor) &amp;&amp; !place_meeting(x,y,o_floor) ) ) &amp;&amp; ymomentum &gt;= 0 ){
+    
     //resets jump-based variables
+    if onground == 0
+    {
+    audio_play_sound(fx_land, 0, false)
+    }
     onground = 1;
     jumpcount = maxjumpcount;
     jumping = 0;
@@ -511,6 +516,12 @@ if(u_press() &amp;&amp; (onground || jump_forgiveness &gt; 0 || underwater_jump)
     jumping = 1;
     ymomentum = -jumpspeed;
     jump_forgiveness = 0;
+    if batmode
+    {
+    audio_play_sound(fx_flap,0,false);
+    }
+    else
+    audio_play_sound(fx_jump,0,false);
     //FMODSoundPlay(jump);
 }
 
@@ -649,7 +660,9 @@ else if (keyboard_check_pressed(ord('3'))) {
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>instance_destroy();
+            <string>audio_stop_all();
+audio_play_sound(fx_sundie, 0, false);
+instance_destroy();
 </string>
           </argument>
         </arguments>
