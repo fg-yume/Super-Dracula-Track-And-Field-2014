@@ -5,7 +5,17 @@
   </Configs>
   <NewExtensions/>
   <sounds name="sound">
-    <sound>sound\sound0</sound>
+    <sound>sound\fx_enemydie</sound>
+    <sound>sound\fx_enemydie2</sound>
+    <sound>sound\fx_flap</sound>
+    <sound>sound\fx_hurt</sound>
+    <sound>sound\fx_jump</sound>
+    <sound>sound\fx_land</sound>
+    <sound>sound\fx_sundie</sound>
+    <sound>sound\fx_start</sound>
+    <sound>sound\m_levelmain</sound>
+    <sound>sound\m_menutheme</sound>
+    <sound>sound\m_tutmain</sound>
   </sounds>
   <sprites name="sprites">
     <sprite>sprites\s_character</sprite>
@@ -117,12 +127,12 @@
     <object>objects\o_menudracula</object>
   </objects>
   <rooms name="rooms">
-    <room>rooms\room0</room>
     <room>rooms\r_startmenu</room>
-    <room>rooms\room1</room>
     <room>rooms\rm_Level1</room>
     <room>rooms\rm_Level2</room>
     <room>rooms\rm_Level3</room>
+    <room>rooms\room0</room>
+    <room>rooms\room1</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
