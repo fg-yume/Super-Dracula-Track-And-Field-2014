@@ -419,10 +419,10 @@ if(water_image = 4){
 if( ( place_meeting(x,y+1,o_wall) || ( place_meeting(x,y+1,o_floor) &amp;&amp; !place_meeting(x,y,o_floor) ) ) &amp;&amp; ymomentum &gt;= 0 ){
     
     //resets jump-based variables
-    if onground == 0
+    /*if onground = 0
     {
     audio_play_sound(fx_land, 0, false)
-    }
+    }*/
     onground = 1;
     jumpcount = maxjumpcount;
     jumping = 0;
@@ -638,6 +638,10 @@ else if (keyboard_check_pressed(ord('2'))) {
 else if (keyboard_check_pressed(ord('3'))) {
     room = rm_Level3;
 }
+if (keyboard_check_pressed(ord('0'))) {
+    room_goto_next();
+}
+
 </string>
           </argument>
         </arguments>
