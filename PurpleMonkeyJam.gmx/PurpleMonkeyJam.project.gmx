@@ -10,6 +10,10 @@
     <sprite>sprites\s_bigSlowEnemyHItbox</sprite>
     <sprite>sprites\s_character</sprite>
     <sprite>sprites\s_dracula_idle</sprite>
+    <sprite>sprites\s_dracula_run</sprite>
+    <sprite>sprites\s_dracula_walk</sprite>
+    <sprite>sprites\s_dracula_jumpup</sprite>
+    <sprite>sprites\s_dracula_jumpdown</sprite>
     <sprite>sprites\s_wall</sprite>
     <sprite>sprites\s_ramp_right</sprite>
     <sprite>sprites\s_ramp_left</sprite>

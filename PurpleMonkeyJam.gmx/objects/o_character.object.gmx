@@ -678,10 +678,20 @@ if(frozen){
 else{
 if(onground){
     if(l_check() || r_check()){
-        //if(sprite != sMainWalk){
-            //sprite = sMainWalk;
-            //sprite_frame = 0;
-        //}
+        if(in_light){
+        if(sprite != s_dracula_walk){
+            sprite = s_dracula_walk;
+            sprite_speed = .5;
+            sprite_frame = 0;
+        }
+        }
+        else{
+        if(sprite != s_dracula_run){
+            sprite = s_dracula_run;
+            sprite_speed = .5;
+            sprite_frame = 0;
+        }
+        }
     }
     else{
         sprite = s_dracula_idle;
@@ -689,11 +699,17 @@ if(onground){
     }
 }
 else{
-    if(underwater){
+    /*if(underwater){
         //sprite = sMainSwim;
     }
     else{
         //sprite = sMainJump;
+    }*/
+    if(ymomentum &lt; 0){
+        sprite = s_dracula_jumpup;
+    }
+    else{
+        sprite = s_dracula_jumpdown;
     }
 }
 
