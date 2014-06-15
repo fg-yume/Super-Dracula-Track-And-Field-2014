@@ -661,6 +661,7 @@ if (keyboard_check_pressed(ord('0'))) {
             <kind>1</kind>
             <string>audio_stop_all();
 audio_play_sound(fx_sundie, 0, false);
+o_controller.dead = 1;
 instance_destroy();
 </string>
           </argument>

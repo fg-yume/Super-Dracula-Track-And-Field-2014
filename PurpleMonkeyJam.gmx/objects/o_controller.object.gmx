@@ -41,6 +41,8 @@ space_key = vk_space;
 space_key2 = ord('X');
 
 u_pressed = 0;
+
+stun = 0;
 </string>
           </argument>
         </arguments>
@@ -63,7 +65,12 @@ u_pressed = 0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if room = 0
+            <string>if(dead &amp;&amp; space_check()){
+    room_restart();
+}
+
+
+if room = 0
 {
  if !audio_is_playing(m_menutheme)
  {
@@ -117,6 +124,7 @@ else
           <argument>
             <kind>1</kind>
             <string>levelend = 0;
+dead = 0;
 </string>
           </argument>
         </arguments>
@@ -157,6 +165,13 @@ if (instance_exists(o_sun))
 draw_sprite(s_dracula_idle, 0, view_xview + 80 + 480 * char_percent, view_yview + 24);
 draw_sprite(s_sunglyph, 0, view_xview + 80 + 480 * sun_percent, view_yview + 24);
 }
+}
+
+if(dead){
+draw_set_font(global.font_outlines);
+draw_set_color(c_white);
+draw_text(view_xview+36, view_yview+178, "YOU BURNED TO A CRISP");
+draw_text(view_xview+24, view_yview+228, "PRESS SPACE TO RESTART");
 }
 
 if(levelend){
