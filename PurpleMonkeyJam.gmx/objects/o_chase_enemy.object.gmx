@@ -56,12 +56,12 @@ xscale = 1;
             <string>if(instance_exists(o_character)){
     if(o_character.in_light){
         if(o_character.x &lt; x){
-            xmomentum = -3;
+            xmomentum = -3.5;
             xscale = -1;
             image_speed = .5;
         }
         else{
-            xmomentum = 3;
+            xmomentum = 3.5;
             xscale = 1;
             image_speed = .5;
         }
