@@ -87,6 +87,8 @@
     <object>objects\o_blood_splatter</object>
     <object>objects\o_blood_splatter2</object>
     <object>objects\o_bigSlowEnemy</object>
+    <object>objects\o_archer</object>
+    <object>objects\o_arrow</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>
