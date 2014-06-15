@@ -14,6 +14,10 @@
     <sprite>sprites\s_dracula_walk</sprite>
     <sprite>sprites\s_dracula_jumpup</sprite>
     <sprite>sprites\s_dracula_jumpdown</sprite>
+    <sprite>sprites\s_goomba</sprite>
+    <sprite>sprites\s_priest</sprite>
+    <sprite>sprites\s_archer</sprite>
+    <sprite>sprites\s_arrow</sprite>
     <sprite>sprites\s_wall</sprite>
     <sprite>sprites\s_ramp_right</sprite>
     <sprite>sprites\s_ramp_left</sprite>
