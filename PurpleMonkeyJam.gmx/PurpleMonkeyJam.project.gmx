@@ -16,6 +16,7 @@
     <sprite>sprites\s_dracula_jumpdown</sprite>
     <sprite>sprites\s_dracula_bat</sprite>
     <sprite>sprites\s_goomba</sprite>
+    <sprite>sprites\s_giant_enemy</sprite>
     <sprite>sprites\s_priest</sprite>
     <sprite>sprites\s_archer</sprite>
     <sprite>sprites\s_arrow</sprite>
@@ -31,6 +32,10 @@
     <sprite>sprites\s_blood2</sprite>
     <sprite>sprites\s_sun</sprite>
     <sprite>sprites\s_turn</sprite>
+    <sprite>sprites\s_goal</sprite>
+    <sprite>sprites\s_levelend</sprite>
+    <sprite>sprites\s_font</sprite>
+    <sprite>sprites\s_font_bigger</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\t_lightbg</background>
@@ -59,6 +64,10 @@
     <background>background\t_lightplat_sleft</background>
     <background>background\t_lightplat_sright</background>
     <background>background\b_bricks</background>
+    <background>background\b_bricks_right</background>
+    <background>background\b_bricks_center</background>
+    <background>background\t_menubricktile</background>
+    <background>background\t_menuplatform</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -95,12 +104,15 @@
     <object>objects\o_blood_small</object>
     <object>objects\o_blood_splatter</object>
     <object>objects\o_blood_splatter2</object>
+    <object>objects\o_levelend</object>
     <object>objects\o_bigSlowEnemy</object>
     <object>objects\o_archer</object>
     <object>objects\o_arrow</object>
+    <object>objects\o_menudracula</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>
+    <room>rooms\r_startmenu</room>
     <room>rooms\room1</room>
     <room>rooms\rm_Level1</room>
     <room>rooms\rm_Level2</room>

@@ -3,8 +3,8 @@
   <spriteName>&lt;undefined&gt;</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>0</depth>
-  <persistent>0</persistent>
+  <depth>-10000</depth>
+  <persistent>-1</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
@@ -26,6 +26,9 @@
           <argument>
             <kind>1</kind>
             <string>blood=0;
+draw_set_colour(c_white);
+global.font = font_add_sprite(s_font,ord('+'),0,0);
+global.font2 = font_add_sprite(s_font_bigger,ord('+'),0,0);
 </string>
           </argument>
         </arguments>
@@ -92,6 +95,15 @@
             <kind>1</kind>
             <string>draw_set_colour(c_red);
 draw_rectangle(view_xview+64, view_yview+312, view_xview+(64+(o_character.blood*100)), view_yview+348, false);
+
+draw_set_color(c_white);
+draw_line(view_xview+80, view_yview+24, view_xview + 560, view_yview + 24);
+
+char_percent = o_character.x / room_width;
+sun_percent = o_sun.image_xscale / room_width;
+draw_sprite(s_dracula_idle, 0, view_xview + 80 + 480 * char_percent, view_yview + 24);
+draw_sprite(s_playerhitbox, 0, view_xview + 80 + 480 * sun_percent, view_yview + 24);
+
 </string>
           </argument>
         </arguments>

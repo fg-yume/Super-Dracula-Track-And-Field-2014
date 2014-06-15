@@ -3,7 +3,7 @@
   <spriteName>s_sun</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>0</depth>
+  <depth>-100</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -31,7 +31,7 @@ y = 0; // static y-pos
 scaleSpeedX = 5; // rate at which the image scales in the x-direction
 
 image_yscale = room_height; // scale height to the room size
-image_xscale = -20; // scale based on speed
+image_xscale = -200; // scale based on speed
 </string>
           </argument>
         </arguments>

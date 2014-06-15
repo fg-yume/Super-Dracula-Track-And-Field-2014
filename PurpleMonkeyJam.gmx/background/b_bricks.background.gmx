@@ -13,7 +13,7 @@
     <TextureGroup0>0</TextureGroup0>
   </TextureGroups>
   <For3D>0</For3D>
-  <width>48</width>
+  <width>16</width>
   <height>16</height>
   <data>images\b_bricks.png</data>
 </background>
