@@ -27,10 +27,6 @@
             <kind>1</kind>
             <string>image_speed=0.5;
 
-if background_htiled[0]
-   {
-   background_hspeed[0] = 8;
-   }
 </string>
           </argument>
         </arguments>
@@ -54,9 +50,11 @@ if background_htiled[0]
           <argument>
             <kind>1</kind>
             <string>draw_set_font(global.font2);
-draw_text(0, 0, "Super Dracula");
-draw_text(0, 27, "Track &amp; Field 2014");
-draw_text(0, 54, "2014");
+draw_text(168, 30, "Super Dracula");
+draw_text(144, 57, "Track and Field");
+draw_text(264, 84, "1514");
+draw_text(96, 278, "Press SPACE to start");
+draw_sprite_ext(s_dracula_run, image_index, x, y, image_xscale, image_yscale, image_angle, image_blend, image_alpha); 
 </string>
           </argument>
         </arguments>
