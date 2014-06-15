@@ -53,18 +53,18 @@
   <instances>
     <instance objName="o_wall" x="0" y="888" name="inst_BAF6AE03" locked="0" code="" scaleX="240" scaleY="3" colour="4294967295" rotation="0"/>
     <instance objName="o_light_volume" x="400" y="760" name="inst_D309FC19" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="o_turn" x="384" y="872" name="inst_15DD1F1F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="o_turn" x="528" y="872" name="inst_34697984" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_turn" x="400" y="872" name="inst_15DD1F1F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_turn" x="512" y="872" name="inst_34697984" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_enemy" x="464" y="880" name="inst_F1AA076D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_light_volume" x="928" y="760" name="inst_EE6B20EC" locked="0" code="" scaleX="1.75" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="o_turn" x="912" y="872" name="inst_37E50751" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="o_turn" x="1152" y="872" name="inst_CDB07848" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_turn" x="928" y="872" name="inst_37E50751" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_turn" x="1136" y="872" name="inst_CDB07848" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_enemy" x="976" y="880" name="inst_1C5E4C17" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_enemy" x="1104" y="880" name="inst_ECCD3FD8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_floor" x="4544" y="496" name="inst_A1FF3E7C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_light_volume" x="1552" y="760" name="inst_1F567331" locked="0" code="" scaleX="2.63000011444092" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="o_turn" x="1536" y="872" name="inst_462D76C3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="o_turn" x="1888" y="872" name="inst_9F933E49" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_turn" x="1552" y="872" name="inst_462D76C3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_turn" x="1872" y="872" name="inst_9F933E49" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_floor_ramp_right" x="4064" y="472" name="inst_1AB985D7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_bigSlowEnemy" x="1728" y="872" name="inst_2BEEFE17" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_ramp_right" x="2080" y="880" name="inst_043B5616" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -141,6 +141,7 @@
     <instance objName="o_floor_ramp_right" x="3856" y="736" name="inst_A5D084E2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_floor_ramp_right" x="3872" y="728" name="inst_467A6192" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_levelend" x="5776" y="464" name="inst_35F9D1B7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_wall" x="5792" y="0" name="inst_5DD2FB10" locked="0" code="" scaleX="1" scaleY="30.5" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
