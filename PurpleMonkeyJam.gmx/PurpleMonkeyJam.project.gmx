@@ -19,6 +19,7 @@
     <sprite>sprites\s_giant_enemy</sprite>
     <sprite>sprites\s_priest</sprite>
     <sprite>sprites\s_archer</sprite>
+    <sprite>sprites\s_coffin</sprite>
     <sprite>sprites\s_arrow</sprite>
     <sprite>sprites\s_wall</sprite>
     <sprite>sprites\s_ramp_right</sprite>
@@ -35,7 +36,9 @@
     <sprite>sprites\s_goal</sprite>
     <sprite>sprites\s_levelend</sprite>
     <sprite>sprites\s_font</sprite>
+    <sprite>sprites\s_font_outline</sprite>
     <sprite>sprites\s_font_bigger</sprite>
+    <sprite>sprites\s_font_outline_bigger</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\t_lightbg</background>
@@ -68,6 +71,7 @@
     <background>background\b_bricks_center</background>
     <background>background\t_menubricktile</background>
     <background>background\t_menuplatform</background>
+    <background>background\b_menu</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -111,8 +115,8 @@
     <object>objects\o_menudracula</object>
   </objects>
   <rooms name="rooms">
-    <room>rooms\room0</room>
     <room>rooms\r_startmenu</room>
+    <room>rooms\room0</room>
     <room>rooms\room1</room>
     <room>rooms\rm_Level1</room>
     <room>rooms\rm_Level2</room>
