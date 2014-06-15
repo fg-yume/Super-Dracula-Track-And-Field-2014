@@ -29,6 +29,18 @@
 draw_set_colour(c_white);
 global.font = font_add_sprite(s_font,ord('+'),0,0);
 global.font2 = font_add_sprite(s_font_bigger,ord('+'),0,0);
+global.font_outlines = font_add_sprite(s_font_outline_bigger,ord('+'),0,-1);
+
+//controls
+r_key = vk_right;
+l_key = vk_left;
+u_key = vk_up;
+u_key2 = ord('Z');
+d_key = vk_down;
+space_key = vk_space;
+space_key2 = ord('X');
+
+u_pressed = 0;
 </string>
           </argument>
         </arguments>
@@ -87,49 +99,7 @@ else
         </arguments>
       </action>
     </event>
-    <event eventtype="8" enumb="0">
-      <action>
-        <libid>1</libid>
-        <id>404</id>
-        <kind>0</kind>
-        <userelative>0</userelative>
-        <isquestion>-1</isquestion>
-        <useapplyto>0</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_if_number</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>10</kind>
-            <object>o_character</object>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>0</string>
-          </argument>
-          <argument>
-            <kind>4</kind>
-            <string>2</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>422</id>
-        <kind>1</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>0</useapplyto>
-        <exetype>0</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-      </action>
+    <event eventtype="7" enumb="4">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -146,7 +116,31 @@ else
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_set_colour(c_red);
+            <string>levelend = 0;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="8" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if(instance_exists(o_character)){
+draw_set_colour(c_red);
 draw_rectangle(view_xview+64, view_yview+312, view_xview+(64+(o_character.blood*100)), view_yview+348, false);
 
 draw_set_color(c_white);
@@ -156,27 +150,19 @@ char_percent = o_character.x / room_width;
 if (instance_exists(o_sun))
 {
     sun_percent = o_sun.image_xscale / room_width;
-}
 draw_sprite(s_dracula_idle, 0, view_xview + 80 + 480 * char_percent, view_yview + 24);
 draw_sprite(s_playerhitbox, 0, view_xview + 80 + 480 * sun_percent, view_yview + 24);
+}
+}
 
+if(levelend){
+draw_set_font(global.font_outlines);
+draw_text(view_xview+60, view_yview+178, "YOU ESCAPE FOR NOW");
+draw_text(view_xview+12, view_yview+228, "PRESS SPACE TO CONTINUE");
+}
 </string>
           </argument>
         </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>424</id>
-        <kind>2</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>0</useapplyto>
-        <exetype>0</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
       </action>
     </event>
     <event eventtype="9" enumb="70">

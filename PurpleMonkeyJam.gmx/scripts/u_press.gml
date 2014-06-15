@@ -6,4 +6,4 @@ if(joystick_exists(1) && !u_pressed){
         return true;
     }
 }
-return (keyboard_check_pressed(u_key) || keyboard_check_pressed(u_key2));
+return (keyboard_check_pressed(o_controller.u_key) || keyboard_check_pressed(o_controller.u_key2));
