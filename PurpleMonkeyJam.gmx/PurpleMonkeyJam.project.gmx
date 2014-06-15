@@ -110,7 +110,6 @@
     <room>rooms\rm_Level1</room>
     <room>rooms\rm_Level2</room>
     <room>rooms\rm_Level3</room>
-    <room>rooms\r_startmenu</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
