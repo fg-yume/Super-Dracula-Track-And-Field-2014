@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>xmomentum = -5;
+            <string>xmomentum = -4;
 ymomentum = 0;
 
 image_speed = .5;
@@ -83,6 +83,7 @@ x += xmomentum;
             <kind>1</kind>
             <string>with(other){
     if(!in_light || batmode){
+    audio_play_sound(fx_enemydie2,0, false);
         blood += 1;
         if(blood &gt; 5){
             blood = 5;
@@ -99,16 +100,17 @@ x += xmomentum;
     }
     else{
     if(!immune){
+        audio_play_sound(fx_hurt,0, false);
         if(x &lt; other.x){
-            xmomentum = -7;
+            xmomentum = -6;
         }
         else{
-            xmomentum = 7;
+            xmomentum = 6;
         }
         ymomentum = -5;
-        stun = 24;
-        knockback = 6;
-        immune = 32;
+        stun = 20;
+        knockback = 4;
+        immune = 42;
     }
     }
 }

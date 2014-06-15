@@ -109,16 +109,7 @@ frozen = 0;
 blood = 0;
 
 
-//controls
-r_key = vk_right;
-l_key = vk_left;
-u_key = vk_up;
-u_key2 = ord('Z');
-d_key = vk_down;
-space_key = vk_space;
-space_key2 = ord('X');
 
-u_pressed = 0;
 
 //font = font_add_sprite(sFont,ord('!'),0,0);
 
@@ -131,7 +122,7 @@ screenshake = 0;
 
 timing = 0;
 time = 0;
-instance_create(0,0,o_sun);
+instance_create(-600,0,o_sun);
 </string>
           </argument>
         </arguments>
@@ -276,6 +267,7 @@ if(batmode){
 }
 else{
 if(space_check() &amp;&amp; blood == 5){
+    audio_play_sound(fx_transform,0,false);
     batmode = 1;
     maxspeed = maxspeed_bat;
     accel = accel_bat;
@@ -417,7 +409,12 @@ if(water_image = 4){
             <kind>1</kind>
             <string>//determines whether or not character is on the ground
 if( ( place_meeting(x,y+1,o_wall) || ( place_meeting(x,y+1,o_floor) &amp;&amp; !place_meeting(x,y,o_floor) ) ) &amp;&amp; ymomentum &gt;= 0 ){
+    
     //resets jump-based variables
+    /*if onground = 0
+    {
+    audio_play_sound(fx_land, 0, false)
+    }*/
     onground = 1;
     jumpcount = maxjumpcount;
     jumping = 0;
@@ -511,6 +508,12 @@ if(u_press() &amp;&amp; (onground || jump_forgiveness &gt; 0 || underwater_jump)
     jumping = 1;
     ymomentum = -jumpspeed;
     jump_forgiveness = 0;
+    if batmode
+    {
+    audio_play_sound(fx_flap,0,false);
+    }
+    else
+    audio_play_sound(fx_jump,0,false);
     //FMODSoundPlay(jump);
 }
 
@@ -619,14 +622,21 @@ if(float &gt; 0){
           <argument>
             <kind>1</kind>
             <string>if (keyboard_check_pressed(ord('1'))) {
-    room_goto(2);
+    room = rm_Level1;
 }
 else if (keyboard_check_pressed(ord('2'))) {
-    room_goto(3);
+    room = rm_Level2;
 }
 else if (keyboard_check_pressed(ord('3'))) {
     room = rm_Level3;
 }
+else if (keyboard_check_pressed(ord('4'))) {
+    room = rm_Level4;
+}
+if (keyboard_check_pressed(ord('0'))) {
+    room_goto_next();
+}
+
 </string>
           </argument>
         </arguments>
@@ -649,7 +659,10 @@ else if (keyboard_check_pressed(ord('3'))) {
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>instance_destroy();
+            <string>audio_stop_all();
+audio_play_sound(fx_sundie, 0, false);
+o_controller.dead = 1;
+instance_destroy();
 </string>
           </argument>
         </arguments>

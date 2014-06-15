@@ -9,4 +9,4 @@ if(joystick_exists(1)){
         return true;
     }
 }
-return keyboard_check(r_key);
+return keyboard_check(o_controller.r_key);

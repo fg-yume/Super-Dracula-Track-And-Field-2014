@@ -29,54 +29,26 @@
 draw_set_colour(c_white);
 global.font = font_add_sprite(s_font,ord('+'),0,0);
 global.font2 = font_add_sprite(s_font_bigger,ord('+'),0,0);
+global.font_outlines = font_add_sprite(s_font_outline_bigger,ord('+'),0,-1);
+
+//controls
+r_key = vk_right;
+l_key = vk_left;
+u_key = vk_up;
+u_key2 = ord('Z');
+d_key = vk_down;
+space_key = vk_space;
+space_key2 = ord('X');
+
+u_pressed = 0;
+
+stun = 0;
 </string>
           </argument>
         </arguments>
       </action>
     </event>
-    <event eventtype="8" enumb="0">
-      <action>
-        <libid>1</libid>
-        <id>404</id>
-        <kind>0</kind>
-        <userelative>0</userelative>
-        <isquestion>-1</isquestion>
-        <useapplyto>0</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_if_number</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>10</kind>
-            <object>o_character</object>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>0</string>
-          </argument>
-          <argument>
-            <kind>4</kind>
-            <string>2</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>422</id>
-        <kind>1</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>0</useapplyto>
-        <exetype>0</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-      </action>
+    <event eventtype="3" enumb="0">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -93,37 +65,134 @@ global.font2 = font_add_sprite(s_font_bigger,ord('+'),0,0);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_set_colour(c_red);
-draw_rectangle(view_xview+64, view_yview+312, view_xview+(64+(o_character.blood*100)), view_yview+348, false);
-
-draw_set_color(c_white);
-draw_line(view_xview+80, view_yview+24, view_xview + 560, view_yview + 24);
-
-char_percent = o_character.x / room_width;
-if (instance_exists(o_sun))
-{
-    sun_percent = o_sun.image_xscale / room_width;
+            <string>if(dead &amp;&amp; space_check()){
+    room_restart();
 }
-draw_sprite(s_dracula_idle, 0, view_xview + 80 + 480 * char_percent, view_yview + 24);
-draw_sprite(s_playerhitbox, 0, view_xview + 80 + 480 * sun_percent, view_yview + 24);
 
+if room = 0 || instance_exists(o_winscreen)
+{
+ if !audio_is_playing(m_menutheme)
+ {
+  audio_stop_sound(m_tutmain)
+  audio_stop_sound(m_levelmain)
+  audio_play_sound(m_menutheme, 0, true);
+ }
+} 
+else
+ audio_stop_sound(m_menutheme);
+ 
+ if room = 1 || room = 2 || room = 3
+{
+ if !audio_is_playing(m_tutmain)
+ {
+  audio_play_sound(m_tutmain, 0, true);
+ }
+} 
+else
+ audio_stop_sound(m_tutmain);
+ 
+ if room = 4 || room = 5 || room = 6 || room = 7 || room = 8 || room = 9
+{
+ if !audio_is_playing(m_levelmain)
+ {
+  audio_play_sound(m_levelmain, 0, true);
+ }
+} 
+else
+ audio_stop_sound(m_levelmain);
+ 
+ 
 </string>
           </argument>
         </arguments>
       </action>
+    </event>
+    <event eventtype="7" enumb="4">
       <action>
         <libid>1</libid>
-        <id>424</id>
-        <kind>2</kind>
+        <id>603</id>
+        <kind>7</kind>
         <userelative>0</userelative>
         <isquestion>0</isquestion>
-        <useapplyto>0</useapplyto>
-        <exetype>0</exetype>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
         <functionname></functionname>
         <codestring></codestring>
         <whoName>self</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>levelend = 0;
+dead = 0;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="8" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if(instance_exists(o_character)){
+draw_set_colour(c_red);
+draw_rectangle(view_xview+170, view_yview+326, view_xview+170+(o_character.blood*60), view_yview+344, false);
+
+draw_sprite(s_bloodbar, -1, view_xview + 140, view_yview+312);
+
+if(o_character.blood &gt;= 5 &amp;&amp; !o_character.batmode){
+draw_set_font(global.font_outlines);
+draw_set_color(c_white);
+draw_text(view_xview+180, view_yview+278, "PRESS SPACE");
+}
+
+draw_set_color(c_black);
+draw_line(view_xview+80, view_yview+23, view_xview + 560, view_yview + 23);
+draw_set_color(c_white);
+draw_line(view_xview+80, view_yview+24, view_xview + 560, view_yview + 24);
+draw_set_color(c_black);
+draw_line(view_xview+80, view_yview+25, view_xview + 560, view_yview + 25);
+
+char_percent = o_character.x / room_width;
+if (instance_exists(o_sun))
+{
+    sun_percent = o_sun.image_xscale / room_width;
+draw_sprite(s_dracula_idle, 0, view_xview + 80 + 480 * char_percent, view_yview + 24);
+draw_sprite(s_playerhitbox, 0, view_xview + 80 + 480 * sun_percent, view_yview + 24);
+}
+}
+
+if(dead){
+draw_set_font(global.font_outlines);
+draw_set_color(c_white);
+draw_text(view_xview+36, view_yview+178, "YOU BURNED TO A CRISP");
+draw_text(view_xview+24, view_yview+228, "PRESS SPACE TO RESTART");
+}
+
+
+if(levelend){
+draw_set_font(global.font_outlines);
+draw_set_color(c_white);
+draw_text(view_xview+60, view_yview+178, "YOU ESCAPE FOR NOW");
+draw_text(view_xview+12, view_yview+228, "PRESS SPACE TO CONTINUE");
+}
+</string>
+          </argument>
+        </arguments>
       </action>
     </event>
     <event eventtype="9" enumb="70">

@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>xmomentum = -3;
+            <string>xmomentum = -2;
 ymomentum = 0;
 
 image_speed = .5;

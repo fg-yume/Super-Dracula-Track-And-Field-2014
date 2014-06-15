@@ -5,7 +5,19 @@
   </Configs>
   <NewExtensions/>
   <sounds name="sound">
-    <sound>sound\sound0</sound>
+    <sound>sound\fx_enemydie</sound>
+    <sound>sound\fx_enemydie2</sound>
+    <sound>sound\fx_flap</sound>
+    <sound>sound\fx_hurt</sound>
+    <sound>sound\fx_jump</sound>
+    <sound>sound\fx_land</sound>
+    <sound>sound\fx_sundie</sound>
+    <sound>sound\fx_start</sound>
+    <sound>sound\fx_transform</sound>
+    <sound>sound\fx_endlevel</sound>
+    <sound>sound\m_levelmain</sound>
+    <sound>sound\m_menutheme</sound>
+    <sound>sound\m_tutmain</sound>
   </sounds>
   <sprites name="sprites">
     <sprite>sprites\s_character</sprite>
@@ -22,6 +34,7 @@
     <sprite>sprites\s_floor_ramp_left</sprite>
     <sprite>sprites\s_lightvolume</sprite>
     <sprite>sprites\s_playerhitbox</sprite>
+    <sprite>sprites\s_sunglyph</sprite>
     <sprite>sprites\s_bigSlowEnemyHItbox</sprite>
     <sprite>sprites\s_dracula_idle</sprite>
     <sprite>sprites\s_dracula_run</sprite>
@@ -41,12 +54,17 @@
     <sprite>sprites\s_font_outline</sprite>
     <sprite>sprites\s_font_bigger</sprite>
     <sprite>sprites\s_font_outline_bigger</sprite>
+    <sprite>sprites\s_bloodbar</sprite>
+    <sprite>sprites\s_torch</sprite>
+    <sprite>sprites\s_candle</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\b_bricks</background>
     <background>background\b_bricks_right</background>
     <background>background\b_bricks_center</background>
     <background>background\t_lightbg</background>
+    <background>background\t_torch</background>
+    <background>background\t_candle</background>
     <background>background\t_darkplat_topmid</background>
     <background>background\t_darkplat_topleft</background>
     <background>background\t_darkplat_topright</background>
@@ -74,6 +92,8 @@
     <background>background\t_menubricktile</background>
     <background>background\t_menuplatform</background>
     <background>background\b_menu</background>
+    <background>background\bg_stars</background>
+    <background>background\b_winscreen</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -115,14 +135,19 @@
     <object>objects\o_arrow</object>
     <object>objects\o_playermain</object>
     <object>objects\o_menudracula</object>
+    <object>objects\s_winscreendracula</object>
+    <object>objects\o_winscreen</object>
   </objects>
   <rooms name="rooms">
-    <room>rooms\room0</room>
     <room>rooms\r_startmenu</room>
-    <room>rooms\room1</room>
     <room>rooms\rm_Level1</room>
     <room>rooms\rm_Level2</room>
     <room>rooms\rm_Level3</room>
+    <room>rooms\rm_Level4</room>
+    <room>rooms\rm_LevelT1</room>
+    <room>rooms\room0</room>
+    <room>rooms\room1</room>
+    <room>rooms\r_winscreen</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
