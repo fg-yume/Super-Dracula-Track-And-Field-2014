@@ -148,7 +148,7 @@
     <room>rooms\rm_Level5</room>
     <room>rooms\room0</room>
     <room>rooms\room1</room>
-    <room>rooms\rm_Level6</room>
+    <room>rooms\r_winscreen</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
