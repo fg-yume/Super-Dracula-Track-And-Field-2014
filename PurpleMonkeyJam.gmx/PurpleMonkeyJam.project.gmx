@@ -79,6 +79,7 @@
     <object>objects\o_platform_lr</object>
     <object>objects\o_turn</object>
     <object>objects\o_enemy</object>
+    <object>objects\o_chase_enemy</object>
     <object>objects\o_playermain</object>
     <object>objects\o_sun</object>
     <object>objects\o_blood</object>
