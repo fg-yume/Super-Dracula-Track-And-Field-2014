@@ -150,7 +150,9 @@ dead = 0;
             <kind>1</kind>
             <string>if(instance_exists(o_character)){
 draw_set_colour(c_red);
-draw_rectangle(view_xview+64, view_yview+312, view_xview+(64+(o_character.blood*100)), view_yview+348, false);
+draw_rectangle(view_xview+170, view_yview+326, view_xview+170+(o_character.blood*60), view_yview+344, false);
+
+draw_sprite(s_bloodbar, -1, view_xview + 140, view_yview+312);
 
 draw_set_color(c_black);
 draw_line(view_xview+80, view_yview+23, view_xview + 560, view_yview + 23);

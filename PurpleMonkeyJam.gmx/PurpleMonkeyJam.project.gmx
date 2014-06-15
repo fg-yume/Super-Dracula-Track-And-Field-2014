@@ -53,6 +53,7 @@
     <sprite>sprites\s_font_outline</sprite>
     <sprite>sprites\s_font_bigger</sprite>
     <sprite>sprites\s_font_outline_bigger</sprite>
+    <sprite>sprites\s_bloodbar</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\b_bricks</background>
