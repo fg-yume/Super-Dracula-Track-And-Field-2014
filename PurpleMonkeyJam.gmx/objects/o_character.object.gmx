@@ -276,6 +276,7 @@ if(batmode){
 }
 else{
 if(space_check() &amp;&amp; blood == 5){
+    audio_play_sound(fx_transform,0,false);
     batmode = 1;
     maxspeed = maxspeed_bat;
     accel = accel_bat;

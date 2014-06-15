@@ -13,6 +13,7 @@
     <sound>sound\fx_land</sound>
     <sound>sound\fx_sundie</sound>
     <sound>sound\fx_start</sound>
+    <sound>sound\fx_transform</sound>
     <sound>sound\m_levelmain</sound>
     <sound>sound\m_menutheme</sound>
     <sound>sound\m_tutmain</sound>
