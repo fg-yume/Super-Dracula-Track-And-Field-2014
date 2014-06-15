@@ -19,6 +19,7 @@
     <sprite>sprites\s_giant_enemy</sprite>
     <sprite>sprites\s_priest</sprite>
     <sprite>sprites\s_archer</sprite>
+    <sprite>sprites\s_coffin</sprite>
     <sprite>sprites\s_arrow</sprite>
     <sprite>sprites\s_wall</sprite>
     <sprite>sprites\s_ramp_right</sprite>
@@ -35,7 +36,9 @@
     <sprite>sprites\s_goal</sprite>
     <sprite>sprites\s_levelend</sprite>
     <sprite>sprites\s_font</sprite>
+    <sprite>sprites\s_font_outline</sprite>
     <sprite>sprites\s_font_bigger</sprite>
+    <sprite>sprites\s_font_outline_bigger</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\t_lightbg</background>
