@@ -75,7 +75,7 @@ stun = 0;
           <argument>
             <kind>1</kind>
             <string>endlevel = 1;
-
+audio_play_sound(fx_endlevel, 0 , false);
 o_controller.levelend = 1;
 </string>
           </argument>

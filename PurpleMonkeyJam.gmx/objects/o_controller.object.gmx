@@ -154,6 +154,12 @@ draw_rectangle(view_xview+170, view_yview+326, view_xview+170+(o_character.blood
 
 draw_sprite(s_bloodbar, -1, view_xview + 140, view_yview+312);
 
+if(o_character.blood &gt;= 5 &amp;&amp; !o_character.batmode){
+draw_set_font(global.font_outlines);
+draw_set_color(c_white);
+draw_text(view_xview+180, view_yview+278, "PRESS SPACE");
+}
+
 draw_set_color(c_black);
 draw_line(view_xview+80, view_yview+23, view_xview + 560, view_yview + 23);
 draw_set_color(c_white);
