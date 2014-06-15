@@ -33,6 +33,7 @@
     <sprite>sprites\s_turn</sprite>
     <sprite>sprites\s_goal</sprite>
     <sprite>sprites\s_levelend</sprite>
+    <sprite>sprites\s_font</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\t_lightbg</background>

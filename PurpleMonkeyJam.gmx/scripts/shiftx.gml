@@ -38,7 +38,7 @@ if( argument0 != 0 ){
         x += argument0;
     }
     //move up solid slopes
-    else if( !place_meeting(x+argument0,y-abs(argument0*.75)-2,o_wall) ){
+    else if( !place_meeting(x+argument0,y-abs(argument0)-2,o_wall) ){
         x += argument0;
         y -= abs(argument0*2)+2;
         move_up_slope = 1;
@@ -61,13 +61,13 @@ if( argument0 != 0 ){
     move_snap(1,1);
     
     //move character up sloped platforms
-    if( !fallthrough && place_meeting(x,y,o_floor) && !place_meeting(x+argument0,y-abs(argument0*.75)-2,o_floor) ){
+    if( !fallthrough && place_meeting(x,y,o_floor) && !place_meeting(x+argument0,y-abs(argument0)-2,o_floor) ){
         y -= abs(argument0*2)+2;
         move_up_slope = 1;
     }
     
     //move character down if just above the ground (so he can walk down slopes
-    if( (place_meeting(x,y+abs(argument0*.75)+2,o_floor) && onground) || move_up_slope ){
+    if( (place_meeting(x,y+abs(argument0)+2,o_floor) && onground) || move_up_slope ){
         while( !place_meeting(x,y+1,o_floor) ){
             y += 1;
         }

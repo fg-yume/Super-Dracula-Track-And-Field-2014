@@ -70,9 +70,9 @@ airdecel_light = 1;
 doublejump_light = 0;
 
 batmode = 0;
-maxspeed_bat = 10; //maximum speed on ground
-accel_bat = 5; //acceleration on ground
-decel_bat = 5; //rate of deceleration on the ground
+maxspeed_bat = 2; //maximum speed on ground
+accel_bat = 2; //acceleration on ground
+decel_bat = 2; //rate of deceleration on the ground
 jumpspeed_bat = 8;
 maxjumpcount_bat = 1;
 maxairaccel_bat = 10; //maximum speed in air
