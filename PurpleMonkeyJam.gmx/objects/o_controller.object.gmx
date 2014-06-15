@@ -69,19 +69,17 @@ stun = 0;
     room_restart();
 }
 
-if room = 0 || instance_exists(o_winscreen)
+if room = 0 || room = 5
 {
  if !audio_is_playing(m_menutheme)
  {
-  audio_stop_sound(m_tutmain)
-  audio_stop_sound(m_levelmain)
   audio_play_sound(m_menutheme, 0, true);
  }
 } 
 else
  audio_stop_sound(m_menutheme);
  
- if room = 1 || room = 2 || room = 3
+ if room = 1 || room = 2
 {
  if !audio_is_playing(m_tutmain)
  {
@@ -91,7 +89,7 @@ else
 else
  audio_stop_sound(m_tutmain);
  
- if room = 4 || room = 5 || room = 6 || room = 7 || room = 8 || room = 9
+ if room = 3 || room = 4
 {
  if !audio_is_playing(m_levelmain)
  {
@@ -217,6 +215,22 @@ draw_text(view_xview+12, view_yview+228, "PRESS SPACE TO CONTINUE");
             <string>0</string>
           </argument>
         </arguments>
+      </action>
+    </event>
+    <event eventtype="9" enumb="27">
+      <action>
+        <libid>1</libid>
+        <id>332</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_end_game</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
       </action>
     </event>
   </events>
