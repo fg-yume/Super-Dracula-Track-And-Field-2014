@@ -26,8 +26,9 @@
           <argument>
             <kind>1</kind>
             <string>blood=0;
-
+draw_set_colour(c_white);
 global.font = font_add_sprite(s_font,ord('+'),0,0);
+global.font2 = font_add_sprite(s_font_bigger,ord('+'),0,0);
 </string>
           </argument>
         </arguments>
