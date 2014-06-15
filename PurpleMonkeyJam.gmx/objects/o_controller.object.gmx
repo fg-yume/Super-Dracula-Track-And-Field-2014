@@ -143,8 +143,12 @@ else
 draw_set_colour(c_red);
 draw_rectangle(view_xview+64, view_yview+312, view_xview+(64+(o_character.blood*100)), view_yview+348, false);
 
+draw_set_color(c_black);
+draw_line(view_xview+80, view_yview+23, view_xview + 560, view_yview + 23);
 draw_set_color(c_white);
 draw_line(view_xview+80, view_yview+24, view_xview + 560, view_yview + 24);
+draw_set_color(c_black);
+draw_line(view_xview+80, view_yview+25, view_xview + 560, view_yview + 25);
 
 char_percent = o_character.x / room_width;
 if (instance_exists(o_sun))
@@ -157,6 +161,7 @@ draw_sprite(s_playerhitbox, 0, view_xview + 80 + 480 * sun_percent, view_yview +
 
 if(levelend){
 draw_set_font(global.font_outlines);
+draw_set_color(c_white);
 draw_text(view_xview+60, view_yview+178, "YOU ESCAPE FOR NOW");
 draw_text(view_xview+12, view_yview+228, "PRESS SPACE TO CONTINUE");
 }
