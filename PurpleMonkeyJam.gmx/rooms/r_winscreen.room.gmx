@@ -52,6 +52,7 @@
   </views>
   <instances>
     <instance objName="s_winscreendracula" x="267" y="216" name="inst_4E6CD3E6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_winscreen" x="156" y="326" name="inst_0543200F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

@@ -130,6 +130,7 @@
     <object>objects\o_playermain</object>
     <object>objects\o_menudracula</object>
     <object>objects\s_winscreendracula</object>
+    <object>objects\o_winscreen</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\r_startmenu</room>
