@@ -31,7 +31,7 @@
     <yoffset>0</yoffset>
   </makerSettings>
   <backgrounds>
-    <background visible="-1" foreground="0" name="bg_stars" x="0" y="0" htiled="-1" vtiled="0" hspeed="0" vspeed="0" stretch="0"/>
+    <background visible="-1" foreground="0" name="bg_stars" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
@@ -170,6 +170,9 @@
     <instance objName="o_floor" x="4752" y="464" name="inst_36216B32" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_wall" x="1888" y="808" name="inst_5ED65909" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_wall" x="1536" y="808" name="inst_30A508B8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_blackcover" x="0" y="888" name="inst_79D1A1EA" locked="0" code="" scaleX="73" scaleY="4" colour="4294967295" rotation="0"/>
+    <instance objName="o_blackcover" x="2288" y="784" name="inst_405A42D2" locked="0" code="" scaleX="28" scaleY="8.25" colour="4294967295" rotation="0"/>
+    <instance objName="o_blackcover" x="3184" y="816" name="inst_3A7C1BE8" locked="0" code="" scaleX="30" scaleY="8" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="t_candle" x="1584" y="848" w="16" h="16" xo="0" yo="0" id="10000360" name="inst_9FFD19C5" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

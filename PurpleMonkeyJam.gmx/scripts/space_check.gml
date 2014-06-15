@@ -2,7 +2,7 @@ if(stun > 0){
     return false;
 }
 if(joystick_exists(1)){
-    if(joystick_check_button(1,2)){
+    if(joystick_check_button(1,3)){
         return true;
     }
 }
