@@ -633,6 +633,9 @@ else if (keyboard_check_pressed(ord('3'))) {
 else if (keyboard_check_pressed(ord('4'))) {
     room = rm_Level4;
 }
+else if (keyboard_check_pressed(ord('5'))) {
+    room = rm_Level5;
+}
 if (keyboard_check_pressed(ord('0'))) {
     room_goto_next();
 }
