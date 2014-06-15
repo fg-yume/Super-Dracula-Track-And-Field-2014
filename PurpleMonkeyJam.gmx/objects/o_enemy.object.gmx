@@ -102,15 +102,15 @@ x += xmomentum;
     if(!immune){
         audio_play_sound(fx_hurt,0, false);
         if(x &lt; other.x){
-            xmomentum = -7;
+            xmomentum = -6;
         }
         else{
-            xmomentum = 7;
+            xmomentum = 6;
         }
         ymomentum = -5;
-        stun = 24;
-        knockback = 6;
-        immune = 32;
+        stun = 20;
+        knockback = 4;
+        immune = 42;
     }
     }
 }

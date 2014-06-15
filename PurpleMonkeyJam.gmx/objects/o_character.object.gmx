@@ -131,7 +131,7 @@ screenshake = 0;
 
 timing = 0;
 time = 0;
-instance_create(0,0,o_sun);
+instance_create(-400,0,o_sun);
 </string>
           </argument>
         </arguments>
