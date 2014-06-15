@@ -7,7 +7,18 @@
   <sounds name="sound"/>
   <sprites name="sprites">
     <sprite>sprites\s_playerhitbox</sprite>
+    <sprite>sprites\s_bigSlowEnemyHItbox</sprite>
+    <sprite>sprites\s_character</sprite>
     <sprite>sprites\s_dracula_idle</sprite>
+    <sprite>sprites\s_dracula_run</sprite>
+    <sprite>sprites\s_dracula_walk</sprite>
+    <sprite>sprites\s_dracula_jumpup</sprite>
+    <sprite>sprites\s_dracula_jumpdown</sprite>
+    <sprite>sprites\s_dracula_bat</sprite>
+    <sprite>sprites\s_goomba</sprite>
+    <sprite>sprites\s_priest</sprite>
+    <sprite>sprites\s_archer</sprite>
+    <sprite>sprites\s_arrow</sprite>
     <sprite>sprites\s_wall</sprite>
     <sprite>sprites\s_ramp_right</sprite>
     <sprite>sprites\s_ramp_left</sprite>
@@ -79,6 +90,7 @@
     <object>objects\o_platform_lr</object>
     <object>objects\o_turn</object>
     <object>objects\o_enemy</object>
+    <object>objects\o_chase_enemy</object>
     <object>objects\o_playermain</object>
     <object>objects\o_sun</object>
     <object>objects\o_blood</object>
@@ -86,6 +98,9 @@
     <object>objects\o_blood_splatter</object>
     <object>objects\o_blood_splatter2</object>
     <object>objects\o_levelend</object>
+    <object>objects\o_bigSlowEnemy</object>
+    <object>objects\o_archer</object>
+    <object>objects\o_arrow</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>
