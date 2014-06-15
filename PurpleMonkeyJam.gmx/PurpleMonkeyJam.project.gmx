@@ -16,6 +16,7 @@
     <sprite>sprites\s_dracula_jumpdown</sprite>
     <sprite>sprites\s_dracula_bat</sprite>
     <sprite>sprites\s_goomba</sprite>
+    <sprite>sprites\s_giant_enemy</sprite>
     <sprite>sprites\s_priest</sprite>
     <sprite>sprites\s_archer</sprite>
     <sprite>sprites\s_arrow</sprite>
