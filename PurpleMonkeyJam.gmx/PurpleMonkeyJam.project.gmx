@@ -57,6 +57,7 @@
     <sprite>sprites\s_bloodbar</sprite>
     <sprite>sprites\s_torch</sprite>
     <sprite>sprites\s_candle</sprite>
+    <sprite>sprites\s_blackcover</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\b_bricks</background>
@@ -137,6 +138,7 @@
     <object>objects\o_menudracula</object>
     <object>objects\s_winscreendracula</object>
     <object>objects\o_winscreen</object>
+    <object>objects\o_blackcover</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\r_startmenu</room>
