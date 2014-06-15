@@ -678,7 +678,11 @@ if(frozen){
 else{
 if(onground){
     if(l_check() || r_check()){
-        if(in_light){
+        if(batmode){
+            sprite = s_dracula_bat;
+            sprite_speed = .25;
+        }
+        else if(in_light){
         if(sprite != s_dracula_walk){
             sprite = s_dracula_walk;
             sprite_speed = .5;
@@ -694,8 +698,15 @@ if(onground){
         }
     }
     else{
+        if(batmode){
+            sprite = s_dracula_bat;
+            sprite_speed = 0;
+            sprite_frame = 0;
+        }
+        else{
         sprite = s_dracula_idle;
         sprite_speed = .15;
+        }
     }
 }
 else{
@@ -706,10 +717,24 @@ else{
         //sprite = sMainJump;
     }*/
     if(ymomentum &lt; 0){
-        sprite = s_dracula_jumpup;
+        if(batmode){
+            sprite = s_dracula_bat;
+            sprite_speed = 0;
+            sprite_frame = 1;
+        }
+        else{
+            sprite = s_dracula_jumpup;
+        }
     }
     else{
-        sprite = s_dracula_jumpdown;
+        if(batmode){
+            sprite = s_dracula_bat;
+            sprite_speed = 0;
+            sprite_frame = 0;
+        }
+        else{
+            sprite = s_dracula_jumpdown;
+        }
     }
 }
 
