@@ -4,7 +4,9 @@
     <Config>Configs\Default</Config>
   </Configs>
   <NewExtensions/>
-  <sounds name="sound"/>
+  <sounds name="sound">
+    <sound>sound\sound0</sound>
+  </sounds>
   <sprites name="sprites">
     <sprite>sprites\s_character</sprite>
     <sprite>sprites\s_goomba</sprite>
@@ -18,17 +20,17 @@
     <sprite>sprites\s_floor</sprite>
     <sprite>sprites\s_floor_ramp_right</sprite>
     <sprite>sprites\s_floor_ramp_left</sprite>
-    <sprite>sprites\s_goal</sprite>
+    <sprite>sprites\s_lightvolume</sprite>
     <sprite>sprites\s_playerhitbox</sprite>
     <sprite>sprites\s_bigSlowEnemyHItbox</sprite>
     <sprite>sprites\s_dracula_idle</sprite>
     <sprite>sprites\s_dracula_run</sprite>
     <sprite>sprites\s_dracula_walk</sprite>
+    <sprite>sprites\s_goal</sprite>
     <sprite>sprites\s_dracula_jumpup</sprite>
     <sprite>sprites\s_dracula_jumpdown</sprite>
     <sprite>sprites\s_dracula_bat</sprite>
     <sprite>sprites\s_arrow</sprite>
-    <sprite>sprites\s_lightvolume</sprite>
     <sprite>sprites\s_blood_small</sprite>
     <sprite>sprites\s_blood</sprite>
     <sprite>sprites\s_blood2</sprite>
