@@ -107,6 +107,7 @@ x += xmomentum;
             <kind>1</kind>
             <string>with(other){
     if(batmode){
+    audio_play_sound(fx_enemydie,0, false);
         blood += 1;
         if(blood &gt; 5){
             blood = 5;
@@ -123,6 +124,7 @@ x += xmomentum;
     }
     else{
     if(!immune){
+    audio_play_sound(fx_hurt,0, false);
         if(x &lt; other.x){
             xmomentum = -7;
         }

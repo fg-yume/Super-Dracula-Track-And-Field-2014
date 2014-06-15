@@ -60,6 +60,28 @@ global.font2 = font_add_sprite(s_font_bigger,ord('+'),0,0);
 } 
 else
  audio_stop_sound(m_menutheme);
+ 
+ if room = 1 || room = 2 || room = 3
+{
+ if !audio_is_playing(m_tutmain)
+ {
+  audio_play_sound(m_tutmain, 0, true);
+ }
+} 
+else
+ audio_stop_sound(m_tutmain);
+ 
+ if room = 4 || room = 5 || room = 6 || room = 7 || room = 8 || room = 9
+{
+ if !audio_is_playing(m_levelmain)
+ {
+  audio_play_sound(m_levelmain, 0, true);
+ }
+} 
+else
+ audio_stop_sound(m_levelmain);
+ 
+ 
 </string>
           </argument>
         </arguments>
