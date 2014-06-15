@@ -624,7 +624,7 @@ else if (keyboard_check_pressed(ord('2'))) {
     room_goto(3);
 }
 else if (keyboard_check_pressed(ord('3'))) {
-    room_goto(4);
+    room = rm_Level3;
 }
 </string>
           </argument>

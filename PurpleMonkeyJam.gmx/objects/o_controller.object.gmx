@@ -100,7 +100,10 @@ draw_set_color(c_white);
 draw_line(view_xview+80, view_yview+24, view_xview + 560, view_yview + 24);
 
 char_percent = o_character.x / room_width;
-sun_percent = o_sun.image_xscale / room_width;
+if (instance_exists(o_sun))
+{
+    sun_percent = o_sun.image_xscale / room_width;
+}
 draw_sprite(s_dracula_idle, 0, view_xview + 80 + 480 * char_percent, view_yview + 24);
 draw_sprite(s_playerhitbox, 0, view_xview + 80 + 480 * sun_percent, view_yview + 24);
 
