@@ -63,10 +63,12 @@ u_pressed = 0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if room = 0
+            <string>if room = 0 || room = "r_winscreen"
 {
  if !audio_is_playing(m_menutheme)
  {
+  audio_stop_sound(m_tutmain)
+  audio_stop_sound(m_levelmain)
   audio_play_sound(m_menutheme, 0, true);
  }
 } 

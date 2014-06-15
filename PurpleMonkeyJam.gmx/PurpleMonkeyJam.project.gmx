@@ -86,6 +86,7 @@
     <background>background\t_menuplatform</background>
     <background>background\b_menu</background>
     <background>background\bg_stars</background>
+    <background>background\b_winscreen</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -127,6 +128,7 @@
     <object>objects\o_arrow</object>
     <object>objects\o_playermain</object>
     <object>objects\o_menudracula</object>
+    <object>objects\s_winscreendracula</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\r_startmenu</room>
@@ -137,6 +139,7 @@
     <room>rooms\rm_LevelT1</room>
     <room>rooms\room0</room>
     <room>rooms\room1</room>
+    <room>rooms\r_winscreen</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
