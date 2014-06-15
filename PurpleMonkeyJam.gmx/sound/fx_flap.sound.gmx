@@ -2,10 +2,10 @@
 <sound>
   <kind>0</kind>
   <extension>.wav</extension>
-  <origname>C:\Users\owner\Documents\GitHub\Light-and-Shadow\fx_flappy.wav</origname>
+  <origname>C:\Users\owner\Documents\GitHub\Light-and-Shadow\PurpleMonkeyJam.gmx\\sound\audio\fx_flap.wav</origname>
   <effects>0</effects>
   <volume>
-    <volume>1</volume>
+    <volume>0.81</volume>
   </volume>
   <pan>0</pan>
   <bitRates>
