@@ -87,9 +87,9 @@
     <instance objName="o_ramp_right" x="1664" y="648" name="inst_31C64C98" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_wall" x="1680" y="648" name="inst_A5368E76" locked="0" code="" scaleX="40" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_light_volume" x="1856" y="520" name="inst_4E54545F" locked="0" code="" scaleX="2" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="o_turn" x="1856" y="632" name="inst_2B5E27C1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_turn" x="1952" y="632" name="inst_2B5E27C1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_turn" x="2096" y="632" name="inst_738FDA60" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="o_bigSlowEnemy" x="1936" y="632" name="inst_57AA68AD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_bigSlowEnemy" x="2032" y="632" name="inst_57AA68AD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_enemy" x="2192" y="640" name="inst_B5C07168" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_wall" x="2304" y="664" name="inst_DD55E6A4" locked="0" code="" scaleX="1" scaleY="5" colour="4294967295" rotation="0"/>
     <instance objName="o_floor" x="2320" y="688" name="inst_D172CECD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -104,6 +104,9 @@
     <instance objName="o_wall" x="2832" y="648" name="inst_25B444C7" locked="0" code="" scaleX="3" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_archer" x="2864" y="640" name="inst_57B70BDE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_light_volume" x="2832" y="616" name="inst_F9335914" locked="0" code="" scaleX="0.375" scaleY="0.25" colour="4294967295" rotation="0"/>
+    <instance objName="o_floor" x="2560" y="688" name="inst_D1203054" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_light_volume" x="2320" y="544" name="inst_2BEE8F89" locked="0" code="" scaleX="1.25" scaleY="0.8125" colour="4294967295" rotation="0"/>
+    <instance objName="o_light_volume" x="2560" y="544" name="inst_D24D3941" locked="0" code="" scaleX="1.00787401199341" scaleY="0.8125" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

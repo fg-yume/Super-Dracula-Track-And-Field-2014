@@ -164,7 +164,7 @@
     <instance objName="o_wall" x="272" y="304" name="inst_829C761E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_wall" x="288" y="304" name="inst_B40AE8E9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_wall" x="304" y="304" name="inst_036C87A3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="o_light_volume" x="64" y="56" name="inst_CC5862B5" locked="0" code="" scaleX="5.42000007629395" scaleY="1.95000004768372" colour="4294967295" rotation="0"/>
+    <instance objName="o_light_volume" x="64" y="56" name="inst_CC5862B5" locked="0" code="" scaleX="5" scaleY="1.9375" colour="4294967295" rotation="0"/>
     <instance objName="o_character" x="128" y="296" name="inst_297D091E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_levelend" x="1840" y="296" name="inst_1FE51919" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_wall" x="1856" y="0" name="inst_685C82D5" locked="0" code="" scaleX="1" scaleY="19" colour="4294967295" rotation="0"/>
