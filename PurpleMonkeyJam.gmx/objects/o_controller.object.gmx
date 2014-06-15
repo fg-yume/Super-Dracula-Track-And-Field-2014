@@ -95,6 +95,15 @@ global.font2 = font_add_sprite(s_font_bigger,ord('+'),0,0);
             <kind>1</kind>
             <string>draw_set_colour(c_red);
 draw_rectangle(view_xview+64, view_yview+312, view_xview+(64+(o_character.blood*100)), view_yview+348, false);
+
+draw_set_color(c_white);
+draw_line(view_xview+80, view_yview+24, view_xview + 560, view_yview + 24);
+
+char_percent = o_character.x / room_width;
+sun_percent = o_sun.image_xscale / room_width;
+draw_sprite(s_dracula_idle, 0, view_xview + 80 + 480 * char_percent, view_yview + 24);
+draw_sprite(s_playerhitbox, 0, view_xview + 80 + 480 * sun_percent, view_yview + 24);
+
 </string>
           </argument>
         </arguments>
