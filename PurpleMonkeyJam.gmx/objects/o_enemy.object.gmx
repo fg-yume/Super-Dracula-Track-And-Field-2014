@@ -83,7 +83,7 @@ x += xmomentum;
             <kind>1</kind>
             <string>with(other){
     if(!in_light || batmode){
-    audio_play_sound(fx_enemydie,0, false);
+    audio_play_sound(fx_enemydie2,0, false);
         blood += 1;
         if(blood &gt; 5){
             blood = 5;
