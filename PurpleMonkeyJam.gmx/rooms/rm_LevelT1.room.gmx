@@ -170,7 +170,6 @@
     <instance objName="o_wall" x="1856" y="0" name="inst_685C82D5" locked="0" code="" scaleX="1" scaleY="19" colour="4294967295" rotation="0"/>
     <instance objName="o_wall" x="48" y="0" name="inst_246A8653" locked="0" code="" scaleX="1" scaleY="20" colour="4294967295" rotation="0"/>
     <instance objName="o_wall" x="64" y="0" name="inst_04065A4A" locked="0" code="" scaleX="112" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="&lt;undefined&gt;" x="0" y="0" name="inst_F734C660" locked="0" code="" scaleX="0" scaleY="0" colour="0" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="t_lightplat_sleft" x="64" y="304" w="16" h="16" xo="0" yo="0" id="10000038" name="inst_4F6B014D" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
